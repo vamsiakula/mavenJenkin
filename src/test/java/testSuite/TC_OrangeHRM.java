@@ -64,7 +64,7 @@ public class TC_OrangeHRM extends BrowsersetUp{
             search.resultsfound(empId);
             closeApplication();
 
-        }//@Test
+        }@Test
        public void tc_002_search () {
             openApplication(url);
             Login login = new Login(driver);
@@ -76,7 +76,7 @@ public class TC_OrangeHRM extends BrowsersetUp{
             search.validate();
             closeApplication();
    }
-   // @Test
+   @Test
     public void tc_003_search()  {
             openApplication(url);
             Login login = new Login(driver);
@@ -88,7 +88,7 @@ public class TC_OrangeHRM extends BrowsersetUp{
             search.resultsfound(empId);
             closeApplication();
     }
-   //@Test
+   @Test
     public void tc_004_search()  {
             openApplication(url);
             Login login = new Login(driver);
@@ -100,7 +100,7 @@ public class TC_OrangeHRM extends BrowsersetUp{
             search.validate();
             closeApplication();
    }
-   //@Test
+   @Test
     public void tc_005_search(){
             openApplication(url);
             Login login = new Login(driver);
@@ -112,7 +112,7 @@ public class TC_OrangeHRM extends BrowsersetUp{
             search.resultsfound(empId);
             closeApplication();
     }
-    //@Test
+    @Test
     public void tc_006_search(){
             openApplication(url);
             Login login = new Login(driver);
@@ -124,7 +124,7 @@ public class TC_OrangeHRM extends BrowsersetUp{
             search.resultsfound(empId);
             closeApplication();
     }
-   //@Test
+   @Test
     public void tc_007_search(){
             openApplication(url);
             Login login = new Login(driver);
@@ -137,7 +137,7 @@ public class TC_OrangeHRM extends BrowsersetUp{
             closeApplication();
     }
 
-    //@Test
+    @Test
     public void tc_008_search() {
         openApplication(url);
         Login login = new Login(driver);
@@ -149,7 +149,7 @@ public class TC_OrangeHRM extends BrowsersetUp{
         search.resultsfound(empId);
         closeApplication();
     }
-    //@Test
+    @Test
     public void tc_009_search() {
         openApplication(url);
         Login login = new Login(driver);
@@ -162,7 +162,7 @@ public class TC_OrangeHRM extends BrowsersetUp{
         closeApplication();
 
     }
-   // @Test
+   @Test
     public void tc_010_search() {
         openApplication(url);
         Login login = new Login(driver);
@@ -174,7 +174,7 @@ public class TC_OrangeHRM extends BrowsersetUp{
         search.resultsfound(empId);
         closeApplication();
     }
-    //@Test
+    @Test
     public void tc_011_search() {
         openApplication(url);
         Login login = new Login(driver);
@@ -186,7 +186,7 @@ public class TC_OrangeHRM extends BrowsersetUp{
         search.resultsfound(empId);
         closeApplication();
     }
-    //@Test
+    @Test
     public void tc_012_search() {
         openApplication(url);
         Login login = new Login(driver);
@@ -198,7 +198,7 @@ public class TC_OrangeHRM extends BrowsersetUp{
         search.validate();
         closeApplication();
     }
-    //@Test
+    @Test
     public void tc_013_search () {
         openApplication(url);
         Login login = new Login(driver);
