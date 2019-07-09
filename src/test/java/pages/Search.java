@@ -5,15 +5,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import utilities.SafeActions;
 
 import java.util.List;
 
-public class Search {
+public class Search extends SafeActions {
     WebDriver driver;
     public Search(WebDriver driver){
+        super(driver);
         this.driver = driver;
     }
-    public void searchEmployee(String empName,String empId,String empSupervisor){
+    public void searchEmployee(String empName,String empId,String empSupervisor) throws InterruptedException {
 
 
         if(empName!="None"){ WebElement employeeName = driver.findElement(By.id("empsearch_employee_name_empName"));
@@ -24,7 +26,8 @@ public class Search {
         if(empSupervisor!="None"){ WebElement employeeSupervisor = driver.findElement(By.id("empsearch_supervisor_name"));
         employeeSupervisor.sendKeys(empSupervisor);}
         WebElement searchButton  = driver.findElement(By.id("searchBtn"));
-        searchButton.click();
+        safeClick(searchButton,10);
+
     }
     public void searchDropDown_Status(String status){
         WebElement employeeStatus = driver.findElement(By.id("empsearch_employee_status"));

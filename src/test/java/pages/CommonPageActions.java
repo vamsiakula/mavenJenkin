@@ -1,6 +1,6 @@
 package pages;
 
-import basis.BrowserSetup;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,6 +27,8 @@ public class CommonPageActions extends SafeActions {
         //Assertions
         Assert.assertEquals("OrangeHRM", driver.getTitle());
         System.out.println(" login is successful");
+    }
+   public void clickModule() {
         WebElement pim =driver.findElement(By.id("menu_pim_viewPimModule"));
         pim.click();
         WebElement config =driver.findElement(By.id("menu_pim_Configuration"));

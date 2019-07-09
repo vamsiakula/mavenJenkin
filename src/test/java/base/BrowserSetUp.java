@@ -11,6 +11,7 @@ import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
+import utilities.SafeActions;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -19,8 +20,9 @@ import java.io.IOException;
 import java.util.Properties;
 
 
-public class BrowserSetUp {
+public class BrowserSetUp  {
     public  WebDriver driver;
+
 
     @BeforeMethod
     @Parameters({"browser"})
@@ -51,7 +53,7 @@ public class BrowserSetUp {
     public void takeScreenShot(String screenshot) throws IOException {
         System.setProperty("org.uncommons.reportng.escape-output", "false");
         File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        String Path = "ScreenShots\\";
+        String Path = "screenshots\\";
 
 
         File screenshotName = new File(Path +"failed_"+screenshot+".jpg");

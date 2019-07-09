@@ -13,7 +13,6 @@ public class SafeActions  {
     public void safeClick(WebElement element, double waiting) throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, (long) waiting);
         wait.until(ExpectedConditions.elementToBeClickable(element));
-        Thread.sleep(300);
         element.click();
     }
 
