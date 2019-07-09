@@ -59,7 +59,7 @@ public class Optional_Fields_Page extends CommonPageActions {
         safeClick(text,10);
         WebElement id=driver.findElement(By.xpath("(//*[@class='left'])[1]"));
         safeClick(id,10);;
-        WebElement text1=driver.findElement(By.cssSelector("label[for='personal_txtEmpNickName']"));
+        WebElement text1=driver.findElement(By.xpath("//label[contains(text(),'Nick Name')]"));
     String name=text1.getText();
         System.out.println(""+name);
         return name;

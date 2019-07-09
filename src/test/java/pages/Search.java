@@ -27,7 +27,7 @@ public class Search {
         searchButton.click();
     }
     public void searchDropDown_Status(String status){
-        WebElement employeeStatus = driver.findElement(By.cssSelector("select[id='empsearch_employee_status"));
+        WebElement employeeStatus = driver.findElement(By.id("empsearch_employee_status"));
         Select dropdown = new Select(employeeStatus);
         dropdown.selectByVisibleText(status);
         //dropdown.selectByIndex(1);

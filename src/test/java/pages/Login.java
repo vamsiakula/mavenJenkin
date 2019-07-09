@@ -3,7 +3,6 @@ package Pages_HRM;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import utilities.SafeActions;
 
 public class Login extends SafeActions {
     public WebDriver driver;

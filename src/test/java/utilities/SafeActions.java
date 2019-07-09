@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class SafeActions {
+public class SafeActions  {
     public WebDriver driver;
     public SafeActions(WebDriver driver){
         this.driver=driver;
@@ -16,8 +16,8 @@ public class SafeActions {
         Thread.sleep(300);
         element.click();
     }
-    public void safeSendKeys(WebElement element,String s)
-    {
+
+    public void safeSendKeys(WebElement element,String s){
         element.sendKeys(s);
     }
 

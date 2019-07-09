@@ -31,6 +31,6 @@ public class Organization_Locations_page extends SafeActions {
     public void resultsNotFound(String Name) {
         WebElement not_found = driver.findElement(By.xpath("//*[text()='No Records Found']"));
         not_found.isDisplayed();
-        System.out.println("The results for "+Name+" were shown below");
+        System.out.println("No Records Found for "+Name+"");
     }
 }

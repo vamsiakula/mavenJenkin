@@ -40,12 +40,12 @@ public class BrowserSetUp {
         Result.setAttribute("result",driver);
     }
 
-    public  void openApplication(String url) throws IOException {
+    public  void openApplication(String url)  {
         driver.get(url);
     }
 
     @AfterMethod
-    public void closeBrowser() throws InterruptedException {
+    public void closeBrowser(){
         driver.close();
     }
     public void takeScreenShot(String screenshot) throws IOException {
