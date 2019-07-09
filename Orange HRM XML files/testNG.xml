@@ -27,9 +27,13 @@
         <parameter name="browser" value="chrome" />
         <classes>
 
+<<<<<<< HEAD:Orange HRM XML files/testNG.xml
 <!--            <class name = "testSuite.TC_Admin_Organization"/>-->
             <class name = "testSuite.TC_OrangeHRM"/>
 <!--            <class name = "testSuite.TC_PIM_Config"/>-->
+=======
+            <class name = "testSuite.TC_Admin_Organization"/>
+>>>>>>> 7c6377fda910e2da6fa5303fafd858c33dec41f9:Orange HRM XML files/testNG.xml
 
 
         </classes>

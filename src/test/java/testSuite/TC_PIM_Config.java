@@ -1,5 +1,12 @@
 package testSuite;
+<<<<<<< HEAD
 
+=======
+
+import base.BrowserSetUp;
+
+import org.openqa.selenium.WebDriver;
+>>>>>>> 7c6377fda910e2da6fa5303fafd858c33dec41f9
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -12,7 +19,11 @@ import java.io.IOException;
 import java.util.Properties;
 @Listeners({test_listeners.ListenerTest.class})
 
+<<<<<<< HEAD
 public class TC_PIM_Config extends CommonActions {
+=======
+public class TC_PIM_Config extends BrowserSetUp {
+>>>>>>> 7c6377fda910e2da6fa5303fafd858c33dec41f9
     FileReader reader = null;
 
     {
