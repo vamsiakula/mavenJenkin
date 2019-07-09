@@ -12,7 +12,7 @@
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
         <listener class-name="test_listeners.ListenerTest" />
     </listeners>
-    <test name="test1">
+    <test name="Orange HRM Regression Test">
         <parameter name="browser" value="chrome" />
         <classes>
             <class name="testSuite.TC_Admin_Organization" />
