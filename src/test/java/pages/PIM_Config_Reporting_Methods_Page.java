@@ -27,24 +27,24 @@ public class PIM_Config_Reporting_Methods_Page extends CommonPageActions{
         System.out.println(""+afterMethod);
         return afterMethod;
     }
+    public void delete() throws InterruptedException {
+        WebElement delete = driver.findElement(By.id("btnDel"));
+        safeClick(delete, 10);
+    }
     public void deleteMethod() throws InterruptedException {
         WebElement checkbox = driver.findElement(By.cssSelector("input[name='chkListRecord[]']"));
         safeClick(checkbox, 10);
-        WebElement delete = driver.findElement(By.id("btnDel"));
-        safeClick(delete, 10);
+
     }
     public void deleteMultiple(String no_of_checkboxes) throws InterruptedException {
         String checkboxes="(//*[@name='chkListRecord[]'])["+no_of_checkboxes+"]";
         WebElement checkbox = driver.findElement(By.xpath(checkboxes));
         safeClick(checkbox, 10);
-        WebElement delete = driver.findElement(By.id("btnDel"));
-        safeClick(delete, 10);
+
     }
     public void deleteAllMethods() throws InterruptedException {
         WebElement checkbox = driver.findElement(By.id("checkAll"));
         safeClick(checkbox, 10);
-        WebElement delete = driver.findElement(By.id("btnDel"));
-        safeClick(delete, 10);
 
     }
 
