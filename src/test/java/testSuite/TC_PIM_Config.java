@@ -1,12 +1,8 @@
 package testSuite;
-<<<<<<< HEAD
-
-=======
 
 import base.BrowserSetUp;
 
 import org.openqa.selenium.WebDriver;
->>>>>>> 7c6377fda910e2da6fa5303fafd858c33dec41f9
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -19,11 +15,7 @@ import java.io.IOException;
 import java.util.Properties;
 @Listeners({test_listeners.ListenerTest.class})
 
-<<<<<<< HEAD
 public class TC_PIM_Config extends CommonActions {
-=======
-public class TC_PIM_Config extends BrowserSetUp {
->>>>>>> 7c6377fda910e2da6fa5303fafd858c33dec41f9
     FileReader reader = null;
 
     {
@@ -221,6 +213,7 @@ public class TC_PIM_Config extends BrowserSetUp {
         commonPageActions.selectOptionFromConfig(properties.getProperty("option4_from_dropdown"));
         PIM_Config_Reporting_Methods_Page reports = new PIM_Config_Reporting_Methods_Page(driver);
         reports.deleteMethod();
+        reports.delete();
     }
     @Test
     public void pim_reporting_methods_016() throws IOException, InterruptedException {
@@ -232,6 +225,7 @@ public class TC_PIM_Config extends BrowserSetUp {
         PIM_Config_Reporting_Methods_Page reports = new PIM_Config_Reporting_Methods_Page(driver);
         reports.deleteMultiple(properties.getProperty("no_of_checkbox1"));
         reports.deleteMultiple(properties.getProperty("no_of_checkbox2"));
+        reports.delete();
 
     }
     @Test
@@ -243,6 +237,7 @@ public class TC_PIM_Config extends BrowserSetUp {
         commonPageActions.selectOptionFromConfig(properties.getProperty("option4_from_dropdown"));
         PIM_Config_Reporting_Methods_Page reports = new PIM_Config_Reporting_Methods_Page(driver);
         reports.deleteAllMethods();
+        reports.delete();
     }
     @Test
     public void pim_terminating_reasons_018() throws IOException, InterruptedException {
