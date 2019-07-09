@@ -27,7 +27,7 @@
         <parameter name="browser" value="chrome" />
         <classes>
 
-            <class name = "tests.TC_Admin_Organization"/>
+            <class name = "testSuite.TC_Admin_Organization"/>
 
 
         </classes>

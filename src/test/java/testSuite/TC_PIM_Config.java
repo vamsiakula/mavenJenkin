@@ -1,6 +1,7 @@
-package testsuite;
+package testSuite;
 
-import basis.BrowserSetup;
+import base.BrowserSetUp;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
@@ -14,7 +15,7 @@ import java.sql.SQLOutput;
 import java.util.Properties;
 @Listeners({test_listeners.ListenerTest.class})
 
-public class TC_PIM_Config extends BrowserSetup {
+public class TC_PIM_Config extends BrowserSetUp {
     FileReader reader = null;
 
     {

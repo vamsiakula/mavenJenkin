@@ -1,4 +1,4 @@
-package tests;
+package testSuite;
 
 import base.BrowserSetUp;
 import org.testng.Assert;

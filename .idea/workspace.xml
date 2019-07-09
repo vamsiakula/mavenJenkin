@@ -1,42 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/test/java/testSuite/TC_OrangeHRM.java" line="125" mnemonic="8" />
+    <bookmark url="file://$PROJECT_DIR$/src/test/java/testSuite/TC_OrangeHRM.java" line="126" mnemonic="8" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecdf06fe-1799-4890-8532-c89a1e168afa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseClass/BrowsersetUp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages_HRM/CommonPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages_HRM/HomePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages_HRM/Login.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages_HRM/LoginPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages_HRM/Organization_General_Information_page.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages_HRM/Organization_Locations_page.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages_HRM/Organization_Structure_page.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages_HRM/PIM_EmployeeList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages_HRM/PIM_Employee_List_Page.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages_HRM/Search.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SafeActions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/BrowserSetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BrowserSetUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/basis/BrowserSetup.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Optional_Fields_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Optional_Fields_Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_listeners/ListenerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_listeners/ListenerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/OrangeHRMData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/OrangeHRMData.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/SafeActions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities1/SafeActions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseClass/BrowsersetUp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/OrangeHRM.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages_HRM/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages_HRM/PIM_EmployeeList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages_HRM/Search.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SafeActions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testSuite/TC_OrangeHRM.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/CommanActions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/SafeActions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/TestListenerClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orange HRM XML files/parameters.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Orange HRM XML files/testNG.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/CommonPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CommonPageActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PIM_EmployeeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PIM_EmployeeList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testSuite/Metrics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testSuite/TC_Admin_Organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testSuite/TC_Admin_Organization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testSuite/TC_OrangeHRM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testSuite/TC_OrangeHRM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testSuite/TC_PIM_Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testSuite/TC_PIM_Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/CommanActions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/TestListenerClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/html/overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/html/overview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/html/reportng.css" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/html/reportng.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/html/reportng.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/html/reportng.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/html/sorttable.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/html/sorttable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/html/suite1_test1_results.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/html/suite1_test1_results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/html/suites.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/html/suites.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,35 +40,77 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testSuite/TC_OrangeHRM.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="62" column="57" selection-start-line="62" selection-start-column="57" selection-end-line="62" selection-end-column="57" />
+            <state relative-caret-position="-578">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/testSuite/TC_PIM_Config.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testSuite/TC_Admin_Organization.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="85">
+              <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="41" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/InputData.properties">
+        <entry file="file://$PROJECT_DIR$/Orange HRM XML files/testNG.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="187">
+              <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utilities/OrangeHRMData.properties">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/CommonPageActions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="119">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/Login.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/PIM_EmployeeList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="10" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utilities/CommonActions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoginPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -108,7 +136,6 @@
         <option value="$PROJECT_DIR$/src/test/java/CommanActions.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages_HRM/Login.java" />
         <option value="$PROJECT_DIR$/src/test/java/utilities/SafeActions.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utilities/CommanActions.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Pages_HRM/PIM_EmployeeList.java" />
         <option value="D:/navyasree.tangudu/navyasree.tangudu/Downloads/training/OpenCart/src/test/java/base/BrowserSetup.java" />
@@ -121,8 +148,17 @@
         <option value="$PROJECT_DIR$/src/test/java/basis/BrowserSetup.java" />
         <option value="$PROJECT_DIR$/src/test/java/utilities/OrangeHRMData.properties" />
         <option value="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testSuite/TC_OrangeHRM.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages_HRM/Search.java" />
+        <option value="$PROJECT_DIR$/Orange HRM XML files/parameters.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/testSuite/TC_Admin_Organization.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testSuite/TC_PIM_Config.java" />
+        <option value="$PROJECT_DIR$/Orange HRM XML files/testNG.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/CommonPageActions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utilities/CommanActions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/Login.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/PIM_EmployeeList.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testSuite/Metrics.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testSuite/TC_OrangeHRM.java" />
       </list>
     </option>
   </component>
@@ -161,13 +197,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="OrangeHrm" type="b2602c69:ProjectViewProjectNode" />
               <item name="OrangeHrm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OrangeHrm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OrangeHrm" type="462c0819:PsiDirectoryNode" />
+              <item name="Orange HRM XML files" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OrangeHrm" type="b2602c69:ProjectViewProjectNode" />
@@ -209,23 +249,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test_listeners" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OrangeHrm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OrangeHrm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="testSuite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OrangeHrm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OrangeHrm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="testXML" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OrangeHrm" type="b2602c69:ProjectViewProjectNode" />
@@ -239,6 +263,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -276,10 +301,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TC_OrangeHRM">
+  <component name="RunManager" selected="TestNG.D:/OrangeHRM Complete Suite/OrangeHrm/Orange HRM XML files/testNG.xml">
     <configuration name="C:/Users/navyasree.tangudu/IdeaProjects/OrangeHRM/src/test/java/testXML/OrangeHRM.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OrangeHRM" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/testXML/OrangeHRM.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D:/OrangeHRM Complete Suite/OrangeHrm/Orange HRM XML files/testNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Automation" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/Orange HRM XML files/testNG.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -340,38 +375,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TC_OrangeHRM.tc_009_search" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OrangeHRM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testSuite.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testSuite" />
-      <option name="MAIN_CLASS_NAME" value="testSuite.TC_OrangeHRM" />
-      <option name="METHOD_NAME" value="tc_009_search" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="TestNG.TC_OrangeHRM.tc_008_search" />
-      <item itemvalue="TestNG.TC_OrangeHRM.tc_009_search" />
       <item itemvalue="TestNG.C:/Users/navyasree.tangudu/IdeaProjects/OrangeHRM/src/test/java/testXML/OrangeHRM.xml" />
       <item itemvalue="TestNG.TC_OrangeHRM.tc_001_search" />
       <item itemvalue="TestNG.TC_OrangeHRM" />
+      <item itemvalue="TestNG.D:/OrangeHRM Complete Suite/OrangeHrm/Orange HRM XML files/testNG.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.D:/OrangeHRM Complete Suite/OrangeHrm/Orange HRM XML files/testNG.xml" />
         <item itemvalue="TestNG.TC_OrangeHRM" />
         <item itemvalue="TestNG.TC_OrangeHRM.tc_001_search" />
         <item itemvalue="TestNG.C:/Users/navyasree.tangudu/IdeaProjects/OrangeHRM/src/test/java/testXML/OrangeHRM.xml" />
         <item itemvalue="TestNG.TC_OrangeHRM.tc_008_search" />
-        <item itemvalue="TestNG.TC_OrangeHRM.tc_009_search" />
       </list>
     </recent_temporary>
   </component>
@@ -389,9 +406,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_navyasree_tangudu_IdeaProjects_OrangeHRM_src_test_java_testXML_OrangeHRM_xml - 2019.07.08 at 15h 00m 01s.xml">
-      <configuration name="C:/Users/navyasree.tangudu/IdeaProjects/OrangeHRM/src/test/java/testXML/OrangeHRM.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="C__Users_navyasree_tangudu_IdeaProjects_OrangeHRM_src_test_java_testXML_OrangeHRM_xml - 2019.07.08 at 15h 02m 31s.xml">
       <configuration name="C:/Users/navyasree.tangudu/IdeaProjects/OrangeHRM/src/test/java/testXML/OrangeHRM.xml" configurationId="TestNG" />
     </history-entry>
@@ -419,6 +433,9 @@
     <history-entry file="TC_OrangeHRM - 2019.07.08 at 16h 46m 34s.xml">
       <configuration name="TC_OrangeHRM" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="D__OrangeHRM_Complete_Suite_OrangeHrm_Orange_HRM_XML_files_testNG_xml - 2019.07.09 at 13h 02m 17s.xml">
+      <configuration name="D:/OrangeHRM Complete Suite/OrangeHrm/Orange HRM XML files/testNG.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -428,15 +445,15 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2246596" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.22768533" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="2" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.299509" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.29787233" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -472,23 +489,7 @@
         <state relative-caret-position="-51" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utilities/CommanActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SafeActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SafeActions.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/utilities/test.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -503,13 +504,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/navyasree.tangudu/navyasree.tangudu/Downloads/training/OpenCart/src/test/java/base/BrowserSetup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="44" column="52" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/navyasree.tangudu/navyasree.tangudu/Downloads/training/OpenCart/src/test/java/base/BrowserSetup.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/BaseClass/Reporter.java" />
     <entry file="file://$PROJECT_DIR$/src/test/screenshots/error.jpg" />
     <entry file="file://$PROJECT_DIR$/screenshots/error.jpg">
@@ -530,13 +525,7 @@
     <entry file="file://$PROJECT_DIR$/OrangeHRM.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages_HRM/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages_HRM/Login.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/Optional_Fields_Page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
@@ -558,48 +547,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages_HRM/Organization_Locations_page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/CommonPageActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages_HRM/PIM_EmployeeList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages_HRM/PIM_Employee_List_Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages_HRM/Organization_General_Information_page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages_HRM/CommonPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages_HRM/Organization_Locations_page.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages_HRM/PIM_EmployeeList.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages_HRM/PIM_Employee_List_Page.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages_HRM/Organization_General_Information_page.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages_HRM/CommonPage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/testXML/OrangeHRM.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -607,27 +559,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/basis/BrowserSetup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testSuite/TC_Admin_Organization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="116" column="58" lean-forward="true" selection-start-line="116" selection-start-column="58" selection-end-line="116" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BaseClass/BrowsersetUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="44" column="67" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/basis/BrowserSetup.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/BaseClass/BrowsersetUp.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/utilities/SafeActions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -637,13 +570,6 @@
             <element signature="e#695#696#0" expanded="true" />
             <element signature="e#730#731#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -660,6 +586,8 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages_HRM/LoginPage.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages_HRM/Search.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/utilities/OrangeHRMData.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -667,41 +595,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages_HRM/LoginPage.java">
+    <entry file="file://$PROJECT_DIR$/InputData.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="493">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testSuite/TC_PIM_Config.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testSuite/TC_OrangeHRM.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/utilities/CommanActions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="62" column="57" selection-start-line="62" selection-start-column="57" selection-end-line="62" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages_HRM/Search.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="29" column="91" selection-start-line="29" selection-start-column="91" selection-end-line="29" selection-end-column="91" />
+        <state relative-caret-position="136">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InputData.properties">
+    <entry file="file://$PROJECT_DIR$/src/test/java/utilities/CommonActions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="36">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testSuite/Metrics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/CommonPageActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/PIM_EmployeeList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testSuite/TC_Admin_Organization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="41" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testSuite/TC_OrangeHRM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-578">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Orange HRM XML files/testNG.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
         </state>
       </provider>
     </entry>
