@@ -1,6 +1,7 @@
 package testSuite;
 
 import org.testng.Assert;
+import pages.CommonPage;
 import pages.PIM_EmployeeList_Page;
 
 import base.BrowserSetUp;
@@ -27,6 +28,16 @@ public class TC_OrangeHRM extends CommonActions {
     String jobTitle;
     String subUnit;
     FileReader reader;
+    String input_name;
+    String input_id;
+    String input_supervisor;
+    String search;
+    String module_pim;
+    String module_employeeList;
+    String input_status;
+    String input_jobtitle;
+    String input_subunit;
+    String add;
 
     {
         try {
@@ -53,105 +64,131 @@ public class TC_OrangeHRM extends CommonActions {
         status = p.getProperty("status");
         jobTitle = p.getProperty("jobTitle");
         subUnit = p.getProperty("subUnit");
+        input_name = p.getProperty("input_name");
+        input_id = p.getProperty("input_id");
+        input_supervisor = p.getProperty("input_supervisor");
+        search = p.getProperty("search_btn");
+        module_pim = p.getProperty("module_name2");
+        module_employeeList = p.getProperty("sub_module_name1_of_module_name2");
+        input_status = p.getProperty("input_status");
+        input_jobtitle = p.getProperty("input_jobtitle");
+        input_subunit = p.getProperty("input_subunit");
+        add=p.getProperty("add_btn");
     }
 
- @Test
+    @Test
     public void tc_001_search() throws IOException, InterruptedException {
-
+        CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
-        pim_employeeListPage.click_ON_PIM();
+        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
-        pim_employeeListPage.searchEmployee(empName, "None", "None");
+        pim_employeeListPage.searchEmployee(empName, "None", "None",input_name,input_name,input_supervisor);
+        clickButton(search);
         pim_employeeListPage.resultsfound(empId);
     }
 
-   @Test
+    @Test
     public void tc_002_search() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
-        pim_employeeListPage.click_ON_PIM();
+        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
-        pim_employeeListPage.searchEmployee(empName1, "none", "None");
+        pim_employeeListPage.searchEmployee(empName1, "None", "None",input_name,input_id,input_supervisor);
+        clickButton(search);
         pim_employeeListPage.validate();
     }
 
     @Test
     public void tc_003_search() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
-        pim_employeeListPage.click_ON_PIM();
+        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
-        pim_employeeListPage.searchEmployee("None", empId, "None");
+        pim_employeeListPage.searchEmployee("None", empId, "None",input_name,input_id,input_supervisor);
+        clickButton(search);
         pim_employeeListPage.resultsfound(empId);
 
     }
 
-     @Test
+    @Test
     public void tc_004_search() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
-        pim_employeeListPage.click_ON_PIM();
+        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
-        pim_employeeListPage.searchEmployee("None", empId2, "None");
+        pim_employeeListPage.searchEmployee("None", empId2, "None",input_name,input_id,input_supervisor);
+        clickButton(search);
         pim_employeeListPage.validate();
 
     }
 
     @Test
     public void tc_005_search() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
-        pim_employeeListPage.click_ON_PIM();
+        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
-        pim_employeeListPage.searchDropDown_Status(status);
+        pim_employeeListPage.dropDown_Search(input_status,input_jobtitle,input_subunit,status,"None","None");
+        clickButton(search);
         pim_employeeListPage.resultsfound(empId);
 
     }
 
     @Test
     public void tc_006_search() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
-        pim_employeeListPage.click_ON_PIM();
+        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
-        pim_employeeListPage.searchDropDown_JobTitle(jobTitle);
+        pim_employeeListPage.dropDown_Search(input_name,input_jobtitle,input_subunit,"None",jobTitle,"None");
+        clickButton(search);
         pim_employeeListPage.resultsfound(empId);
 
     }
 
     @Test
     public void tc_007_search() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
-
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
-        pim_employeeListPage.click_ON_PIM();
+        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
-        pim_employeeListPage.searchDropDown_SubUnit(subUnit);
+        pim_employeeListPage.dropDown_Search(input_status,input_jobtitle,input_subunit,"None","None",subUnit);
+        clickButton(search);
         pim_employeeListPage.resultsfound(empId);
 
     }
 
     @Test
     public void tc_008_search() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
 
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
-        pim_employeeListPage.click_ON_PIM();
+        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
-        pim_employeeListPage.searchEmployee(empName, empId, "None");
+        pim_employeeListPage.searchEmployee(empName,empId,"None",input_name,input_id,input_supervisor);
+        clickButton(search);
         pim_employeeListPage.resultsfound(empId);
 
     }
 
     @Test
     public void tc_009_search() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
 
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
-        pim_employeeListPage.click_ON_PIM();
+        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
-        pim_employeeListPage.searchEmployee(empName, empId2, "None");
+        pim_employeeListPage.searchEmployee(empName, empId2, "None",input_name,input_id,input_supervisor);
+        clickButton(search);
         pim_employeeListPage.validate();
 
 
@@ -159,139 +196,173 @@ public class TC_OrangeHRM extends CommonActions {
 
     @Test
     public void tc_010_search() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
 
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
-        pim_employeeListPage.click_ON_PIM();
+        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
-        pim_employeeListPage.searchEmployee(empName1, empId, "None");
+        pim_employeeListPage.searchEmployee(empName1, empId, "None",input_name,input_id,input_supervisor);
+        clickButton(search);
         pim_employeeListPage.validate();
 
     }
 
     @Test
     public void tc_011_search() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
 
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
-        pim_employeeListPage.click_ON_PIM();
+        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
-        pim_employeeListPage.searchEmployee(empName1, empId2, "None");
+        pim_employeeListPage.searchEmployee(empName1, empId2, "None",input_name,input_id,input_supervisor);
+        clickButton(search);
         pim_employeeListPage.validate();
 
     }
 
     @Test
     public void tc_012_search() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
 
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
-        pim_employeeListPage.click_ON_PIM();
+        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
-        pim_employeeListPage.searchEmployee("None", "None", empSupervisor);
+        pim_employeeListPage.searchEmployee("None", "None",empSupervisor,input_name,input_id,input_supervisor);
+        clickButton(search);
         pim_employeeListPage.validate();
 
     }
 
     @Test
     public void tc_013_search() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
 
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
-        pim_employeeListPage.click_ON_PIM();
+        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
-        pim_employeeListPage.searchEmployee("None", "none", empSupervisor2);
+        pim_employeeListPage.searchEmployee("None", "None",empSupervisor2,input_name,input_id,input_supervisor);
+        clickButton(search);
         pim_employeeListPage.validate();
 
     }
     @Test
     public void tc_014_search() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
 
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
-        pim_employeeListPage.click_ON_PIM();
+        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
-        pim_employeeListPage.searchEmployee("empName", "empId", empSupervisor2);
+        pim_employeeListPage.searchEmployee(empName,empId,empSupervisor2,input_name,input_id,input_supervisor);
+        clickButton(search);
         pim_employeeListPage.validate();
     }
     @Test
     public void tc_015_search() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
-        pim_employeeListPage.click_ON_PIM();
+        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
-        pim_employeeListPage.searchEmployee("empName", "empId", empSupervisor);
+        pim_employeeListPage.searchEmployee(empName,empId,empSupervisor,input_name,input_id,input_supervisor);
+        clickButton(search);
         pim_employeeListPage.validate();
 
     }
     @Test
     public void tc_016_search() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
-        pim_employeeListPage.click_ON_PIM();
+        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
-        pim_employeeListPage.searchEmployee("empName1", "empId", empSupervisor);
+        pim_employeeListPage.searchEmployee(empName1,empId,empSupervisor,input_name,input_id,input_supervisor);
+        clickButton(search);
         pim_employeeListPage.validate();
 
     }
     @Test
     public void tc_017_search() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
-        pim_employeeListPage.click_ON_PIM();
+        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
-        pim_employeeListPage.searchEmployee("empName", "empId2", empSupervisor);
+        pim_employeeListPage.searchEmployee(empName1,empId2,empSupervisor,input_name,input_id,input_supervisor);
+        clickButton(search);
         pim_employeeListPage.validate();
 
     }
     @Test
     public void tc_018_search() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
-        pim_employeeListPage.click_ON_PIM();
+        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
-        pim_employeeListPage.searchEmployee("empName", "empId2", empSupervisor2);
+        pim_employeeListPage.searchEmployee(empName,empId2,empSupervisor2,input_name,input_id,input_supervisor);
+        clickButton(search);
         pim_employeeListPage.validate();
 
     }
     @Test
     public void tc_019_search() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
-        pim_employeeListPage.click_ON_PIM();
+        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
-        pim_employeeListPage.searchEmployee("empName1", "empId", empSupervisor2);
+        pim_employeeListPage.searchEmployee(empName1,empId,empSupervisor2,input_name,input_id,input_supervisor);
+        clickButton(search);
         pim_employeeListPage.validate();
 
     }
     @Test
     public void tc_020_search() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
-        pim_employeeListPage.click_ON_PIM();
+        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
-        pim_employeeListPage.searchEmployee("empName1", "empId2", empSupervisor2);
+        pim_employeeListPage.searchEmployee(empName1,empId2,empSupervisor2,input_name,input_id,input_supervisor);
+        clickButton(search);
         pim_employeeListPage.validate();
 
     }
     @Test
     public void tc_021_search() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
-        pim_employeeListPage.click_ON_PIM();
+        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
-        pim_employeeListPage.searchEmployee("empName1", "empId2", empSupervisor);
+        pim_employeeListPage.searchEmployee(empName1,empId2,empSupervisor,input_name,input_id,input_supervisor);
+        clickButton(search);
         pim_employeeListPage.validate();
 
     }
+    @Test
+    public void tc_022_search() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
+        commonActionsProduced(url, username, password);
+        PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
+        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
+        verifySectionPage("Employee List", "PIM");
+        clickButton(search);
+        pim_employeeListPage.noInput();
+    }
 //    @Test
-//    public void tc_022_search() throws IOException, InterruptedException {
+//    public void tc_0023_addEmployee() throws IOException, InterruptedException {
+//        CommonPage commonPage = new CommonPage(driver);
 //        commonActionsProduced(url, username, password);
 //        PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
-//        pim_employeeListPage.click_ON_PIM();
+//        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
 //        verifySectionPage("Employee List", "PIM");
-//        pim_employeeListPage.searchEmployee("None", "None","None");
-//        pim_employeeListPage.noInput();
-//  }
-}
+//        clickButton(add);
+//    }
 
+}
