@@ -1,33 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Orange HRM Regression Test"
-           tests="21"
-           failures="0"
+           tests="1"
+           failures="1"
            errors="0"
            skipped="0"
-           time="201.020">
+           time="9.477">
   <properties />
+            <testcase name="tc_022_search" time="9.477" classname="testSuite.TC_OrangeHRM">
+                <failure type="java.lang.AssertionError"
+                  message="expected [Employee List] but found [null]"
+              >
+<![CDATA[java.lang.AssertionError: expected [Employee List] but found [null]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:513)
+  org.testng.Assert.assertEqualsImpl(Assert.java:130)
+  org.testng.Assert.assertEquals(Assert.java:116)
+  org.testng.Assert.assertEquals(Assert.java:190)
+  org.testng.Assert.assertEquals(Assert.java:200)
+  pages.PIM_EmployeeList_Page.noInput(PIM_EmployeeList_Page.java:73)
+  testSuite.TC_OrangeHRM.tc_022_search(TC_OrangeHRM.java:294)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  java.lang.Thread.run(Thread.java:748)
+]]>
+      </failure>
+
+          </testcase>
   
   
-            <testcase name="tc_017_search" time="9.731" classname="testSuite.TC_OrangeHRM" />
-                <testcase name="tc_002_search" time="9.286" classname="testSuite.TC_OrangeHRM" />
-                <testcase name="tc_019_search" time="9.422" classname="testSuite.TC_OrangeHRM" />
-                <testcase name="tc_005_search" time="10.747" classname="testSuite.TC_OrangeHRM" />
-                <testcase name="tc_001_search" time="9.125" classname="testSuite.TC_OrangeHRM" />
-                <testcase name="tc_015_search" time="9.119" classname="testSuite.TC_OrangeHRM" />
-                <testcase name="tc_018_search" time="9.415" classname="testSuite.TC_OrangeHRM" />
-                <testcase name="tc_010_search" time="9.363" classname="testSuite.TC_OrangeHRM" />
-                <testcase name="tc_003_search" time="10.433" classname="testSuite.TC_OrangeHRM" />
-                <testcase name="tc_011_search" time="9.159" classname="testSuite.TC_OrangeHRM" />
-                <testcase name="tc_012_search" time="8.968" classname="testSuite.TC_OrangeHRM" />
-                <testcase name="tc_006_search" time="9.606" classname="testSuite.TC_OrangeHRM" />
-                <testcase name="tc_020_search" time="9.150" classname="testSuite.TC_OrangeHRM" />
-                <testcase name="tc_016_search" time="9.856" classname="testSuite.TC_OrangeHRM" />
-                <testcase name="tc_021_search" time="9.220" classname="testSuite.TC_OrangeHRM" />
-                <testcase name="tc_014_search" time="9.239" classname="testSuite.TC_OrangeHRM" />
-                <testcase name="tc_013_search" time="9.204" classname="testSuite.TC_OrangeHRM" />
-                <testcase name="tc_008_search" time="11.033" classname="testSuite.TC_OrangeHRM" />
-                <testcase name="tc_007_search" time="10.291" classname="testSuite.TC_OrangeHRM" />
-                <testcase name="tc_004_search" time="9.135" classname="testSuite.TC_OrangeHRM" />
-                <testcase name="tc_009_search" time="9.518" classname="testSuite.TC_OrangeHRM" />
-      
+  
 </testsuite>

@@ -68,6 +68,11 @@ public class PIM_EmployeeList_Page extends SafeActions {
 
 
     }
+    public void noInput(){
+        WebElement emptySearch = driver.findElement(By.id("menu_pim_viewEmployeeList"));
+        Assert.assertEquals(emptySearch.getAttribute("value"),"Employee List");
+        System.out.println("page reloaded");
+    }
     public void addingNewEmployee() throws InterruptedException {
         WebElement click_add=driver.findElement(By.cssSelector("input[value='Add']"));
         safeClick(click_add,10);

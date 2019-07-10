@@ -55,7 +55,7 @@ public class TC_OrangeHRM extends CommonActions {
         subUnit = p.getProperty("subUnit");
     }
 
-  @Test
+ @Test
     public void tc_001_search() throws IOException, InterruptedException {
 
         commonActionsProduced(url, username, password);
@@ -63,7 +63,7 @@ public class TC_OrangeHRM extends CommonActions {
         pim_employeeListPage.click_ON_PIM();
         pim_employeeListPage.searchEmployee(empName, "none", "None");
         verifySectionPage("Employee List", "PIM");
-        pim_employeeListPage.validate();
+        pim_employeeListPage.resultsfound(empId);
     }
 
     @Test
@@ -291,7 +291,7 @@ public class TC_OrangeHRM extends CommonActions {
 //        pim_employeeListPage.click_ON_PIM();
 //        verifySectionPage("Employee List", "PIM");
 //        pim_employeeListPage.searchEmployee("None", "None","None");
-//
-//    }
+//        pim_employeeListPage.noInput();
+//  }
 }
 
