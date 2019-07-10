@@ -15,7 +15,7 @@
     <test name="Orange HRM Regression Test">
         <parameter name="browser" value="chrome" />
         <classes>
-            <class name="testSuite.TC_Admin_Organization" />
+<!--            <class name="testSuite.TC_Admin_Organization" />/-->
             <class name="testSuite.TC_OrangeHRM" />
 <!--        <class name="testSuite.TC_PIM_Config" />-->
         </classes>

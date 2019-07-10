@@ -15,41 +15,38 @@ public class PIM_EmployeeList_Page extends SafeActions {
         this.driver = driver;
     }
 
-    public void click_ON_PIM() {
-        WebElement pim = driver.findElement(By.id("menu_pim_viewPimModule"));
-        pim.click();
-        String pimPage_verify;
-        pimPage_verify = driver.getTitle();}
-    public void searchEmployee(String empName,String empId,String empSupervisor) throws InterruptedException {
 
+    public void searchEmployee(String empName,String empId,String empSupervisor,String input_name,String input_id,String input_superviosr) throws InterruptedException {
 
-        if(empName!="None"){ WebElement employeeName = driver.findElement(By.id("empsearch_employee_name_empName"));
+        String name_string = "empsearch_"+input_name;
+        String id_string="empsearch_"+input_id;
+        String supervisor_string ="empsearch_"+input_superviosr;
+        if(empName!="None"){ WebElement employeeName = driver.findElement(By.id(name_string));
             employeeName.sendKeys(empName);}
         if(empId!="None"){
-            WebElement employeeId = driver.findElement(By.id("empsearch_id"));
+            WebElement employeeId = driver.findElement(By.id(id_string));
             employeeId.sendKeys(empId);}
-        if(empSupervisor!="None"){ WebElement employeeSupervisor = driver.findElement(By.id("empsearch_supervisor_name"));
+        if(empSupervisor!="None"){ WebElement employeeSupervisor = driver.findElement(By.id(supervisor_string));
             employeeSupervisor.sendKeys(empSupervisor);}
-        WebElement searchButton  = driver.findElement(By.id("searchBtn"));
-        safeClick(searchButton,10);
-
-
     }
-    public void searchDropDown_Status(String status){
-        WebElement employeeStatus = driver.findElement(By.id("empsearch_employee_status"));
-        Select dropdown = new Select(employeeStatus);
-        dropdown.selectByVisibleText(status);
-        //dropdown.selectByIndex(1);
-    }
-    public void searchDropDown_JobTitle(String jobtitle){
-        WebElement employeeJobTitle = driver.findElement(By.id("empsearch_job_title"));
-        Select dropdown = new Select(employeeJobTitle);
-        dropdown.selectByVisibleText(jobtitle);
-    }
-    public void searchDropDown_SubUnit(String subUnit){
-        WebElement employeeSubUnit = driver.findElement(By.id("empsearch_sub_unit"));
-        Select dropdown = new Select(employeeSubUnit);
-        dropdown.selectByVisibleText(subUnit);
+    public void dropDown_Search(String input_status,String input_jobtitle,String input_subunit,String status,String jobtitle,String subUnit){
+        String status_string="empsearch_"+input_status;
+        String jobtitle_string="empsearch_"+input_jobtitle;
+        String subunit_string="empsearch_"+input_subunit;
+        if(status!="None"){
+        WebElement employeeStatus = driver.findElement(By.id(status_string));
+            Select dropdown = new Select(employeeStatus);
+            dropdown.selectByVisibleText(status);}
+        else if(jobtitle!="None") {
+            WebElement employeeJobTitle = driver.findElement(By.id(jobtitle_string));
+            Select dropdown = new Select(employeeJobTitle);
+            dropdown.selectByVisibleText(jobtitle);
+        }
+        else{
+            WebElement employeeSubUnit = driver.findElement(By.id(subunit_string));
+            Select dropdown = new Select(employeeSubUnit);
+            dropdown.selectByVisibleText(subUnit);
+        }
     }
     public void reset() throws InterruptedException {
         WebElement resetButton = driver.findElement(By.id("resetBtn"));
@@ -71,7 +68,9 @@ public class PIM_EmployeeList_Page extends SafeActions {
     }
     public void noInput(){
         WebElement emptySearch = driver.findElement(By.id("menu_pim_viewEmployeeList"));
-        Assert.assertEquals(emptySearch.getAttribute("value"),"Employee List");
+        String a=emptySearch.getText();
+        Assert.assertEquals(a,"Employee List");
+        //Assert.assertEquals(emptySearch.getAttribute("value").equals("Employee List"));
         System.out.println("page reloaded");
     }
     public void addingNewEmployee() throws InterruptedException {
