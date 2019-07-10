@@ -33,6 +33,7 @@ public class PIM_EmployeeList_Page extends SafeActions {
         WebElement searchButton  = driver.findElement(By.id("searchBtn"));
         safeClick(searchButton,10);
 
+
     }
     public void searchDropDown_Status(String status){
         WebElement employeeStatus = driver.findElement(By.id("empsearch_employee_status"));
@@ -60,9 +61,9 @@ public class PIM_EmployeeList_Page extends SafeActions {
         System.out.println("No Records Found");
     }
     public void resultsfound(String empId) throws InterruptedException {
-        WebElement validateElement1 = driver.findElement(By.xpath("//a[contains(text(),'0001')]"));
-       safeClick(validateElement1,10);
-        WebElement validateElement2 = driver.findElement(By.id("personal_txtEmployeeId"));
+        WebElement validateElement1 = driver.findElement(By.xpath("//a[text()='0001']"));
+        safeClick(validateElement1,10L);
+        WebElement validateElement2 = driver.findElement(By.cssSelector("input[id='personal_txtEmployeeId']"));
         Assert.assertTrue(validateElement2.getAttribute("value").equals(empId));
         System.out.println("search results found");
 

@@ -30,7 +30,7 @@ public class TC_OrangeHRM extends CommonActions {
 
     {
         try {
-            reader = new FileReader("D:\\orange\\OrangeHrm\\OrangeHRMData.properties");
+            reader = new FileReader("OrangeHRMData.properties");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -61,12 +61,12 @@ public class TC_OrangeHRM extends CommonActions {
         commonActionsProduced(url, username, password);
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
         pim_employeeListPage.click_ON_PIM();
-        pim_employeeListPage.searchEmployee(empName, "none", "None");
         verifySectionPage("Employee List", "PIM");
+        pim_employeeListPage.searchEmployee(empName, "None", "None");
         pim_employeeListPage.resultsfound(empId);
     }
 
-    @Test
+   @Test
     public void tc_002_search() throws IOException, InterruptedException {
         commonActionsProduced(url, username, password);
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
@@ -87,7 +87,7 @@ public class TC_OrangeHRM extends CommonActions {
 
     }
 
-    @Test
+     @Test
     public void tc_004_search() throws IOException, InterruptedException {
         commonActionsProduced(url, username, password);
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
@@ -189,7 +189,7 @@ public class TC_OrangeHRM extends CommonActions {
         pim_employeeListPage.click_ON_PIM();
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.searchEmployee("None", "None", empSupervisor);
-        pim_employeeListPage.validate();
+        pim_employeeListPage.resultsfound(empId);
 
     }
 
