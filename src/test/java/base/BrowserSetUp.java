@@ -10,6 +10,7 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import utilities.SafeActions;
 
@@ -26,7 +27,7 @@ public class BrowserSetUp  {
 
     @BeforeMethod
     @Parameters({"browser"})
-    public void openBrowser(String browserName,ITestResult Result) throws IOException {
+    public void openBrowser(String browserName, ITestResult Result) throws IOException {
 
         if (browserName.equals("chrome")) {
             System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");

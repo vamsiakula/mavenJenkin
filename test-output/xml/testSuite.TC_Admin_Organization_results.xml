@@ -1,87 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test1"
-<<<<<<< HEAD
-           tests="1"
+<testsuite name="Orange HRM Regression Test"
+           tests="10"
            failures="0"
            errors="0"
            skipped="0"
-           time="17.480">
+           time="104.070">
   <properties />
   
   
-            <testcase name="updatingGeneralInformation" time="17.480" classname="testSuite.TC_Admin_Organization" />
-=======
-           tests="4"
-           failures="1"
-           errors="0"
-           skipped="0"
-           time="37.703">
-  <properties />
-            <testcase name="validateSearchByAvailableCityName" time="9.450" classname="testSuite.TC_Admin_Organization">
-                <failure type="org.openqa.selenium.NoSuchElementException"
-                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;Ottawa&apos;]&quot;}
-  (Session info: chrome=75.0.3770.100)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;SYSR185&apos;, ip: &apos;192.168.2.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\VAMSI~1.AKU\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64232}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: a83c0329e4e4610478acaff136aaa9a1
-*** Element info: {Using=xpath, value=//*[text()=&apos;Ottawa&apos;]}"
-              >
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Ottawa']"}
-  (Session info: chrome=75.0.3770.100)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SYSR185', ip: '192.168.2.136', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\VAMSI~1.AKU\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64232}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: a83c0329e4e4610478acaff136aaa9a1
-*** Element info: {Using=xpath, value=//*[text()='Ottawa']}
-  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-  org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-  org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-  org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-  pages.Organization_Locations_page.resultsFound(Organization_Locations_page.java:27)
-  testSuite.TC_Admin_Organization.validateSearchByAvailableCityName(TC_Admin_Organization.java:175)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:498)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-  java.lang.Thread.run(Thread.java:748)
-]]>
-      </failure>
-
-          </testcase>
-  
-  
-            <testcase name="validateSearchByAvailableCountry" time="9.532" classname="testSuite.TC_Admin_Organization" />
-                <testcase name="validateSearchByUnavailableCityName" time="9.328" classname="testSuite.TC_Admin_Organization" />
-                <testcase name="validateSearchByUnavailableCountry" time="9.393" classname="testSuite.TC_Admin_Organization" />
->>>>>>> 7c6377fda910e2da6fa5303fafd858c33dec41f9
+            <testcase name="validateSearchByAvailableCountry" time="10.578" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="validateNonMandatoryFields" time="10.776" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="validateCountOfEmployees" time="14.219" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="validateSearchByUnavailableLocationName" time="10.150" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="validateMandatoryFields" time="9.038" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="updatingGeneralInformation" time="10.567" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="validateSearchByAvailableLocationName" time="9.999" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="validateSearchByAvailableCityName" time="9.888" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="validateSearchByUnavailableCountry" time="9.079" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="validateSearchByUnavailableCityName" time="9.776" classname="testSuite.TC_Admin_Organization" />
       
 </testsuite>

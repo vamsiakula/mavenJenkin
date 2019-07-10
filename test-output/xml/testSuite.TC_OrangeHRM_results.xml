@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test1"
-           tests="1"
+<testsuite name="Orange HRM Regression Test"
+           tests="21"
            failures="0"
            errors="0"
            skipped="0"
-           time="11.198">
+           time="201.020">
   <properties />
   
   
-            <testcase name="tc_001_search" time="11.198" classname="testSuite.TC_OrangeHRM" />
+            <testcase name="tc_017_search" time="9.731" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_002_search" time="9.286" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_019_search" time="9.422" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_005_search" time="10.747" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_001_search" time="9.125" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_015_search" time="9.119" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_018_search" time="9.415" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_010_search" time="9.363" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_003_search" time="10.433" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_011_search" time="9.159" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_012_search" time="8.968" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_006_search" time="9.606" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_020_search" time="9.150" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_016_search" time="9.856" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_021_search" time="9.220" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_014_search" time="9.239" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_013_search" time="9.204" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_008_search" time="11.033" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_007_search" time="10.291" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_004_search" time="9.135" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_009_search" time="9.518" classname="testSuite.TC_OrangeHRM" />
       
 </testsuite>

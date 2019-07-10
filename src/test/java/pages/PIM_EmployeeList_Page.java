@@ -50,22 +50,32 @@ public class PIM_EmployeeList_Page extends SafeActions {
         Select dropdown = new Select(employeeSubUnit);
         dropdown.selectByVisibleText(subUnit);
     }
-    public void reset(){
+    public void reset() throws InterruptedException {
         WebElement resetButton = driver.findElement(By.id("resetBtn"));
-        resetButton.click();
+        safeClick(resetButton,10);
     }
     public void validate(){
         WebElement validation = driver.findElement(By.xpath("//td[text()=\"No Records Found\"]"));
         Assert.assertTrue(validation.getText().equals("No Records Found"));
         System.out.println("No Records Found");
     }
-    public void resultsfound(String empId){
+    public void resultsfound(String empId) throws InterruptedException {
         WebElement validateElement1 = driver.findElement(By.xpath("//a[contains(text(),'0001')]"));
-        validateElement1.click();
+       safeClick(validateElement1,10);
         WebElement validateElement2 = driver.findElement(By.id("personal_txtEmployeeId"));
         Assert.assertTrue(validateElement2.getAttribute("value").equals(empId));
         System.out.println("search results found");
 
 
+    }
+    public void addingNewEmployee() throws InterruptedException {
+        WebElement click_add=driver.findElement(By.cssSelector("input[value='Add']"));
+        safeClick(click_add,10);
+        WebElement enter_first_name=driver.findElement(By.cssSelector("input[name='firstName']"));
+        safeSendKeys(enter_first_name,"vamsith");
+        WebElement enter_last_name=driver.findElement(By.cssSelector("input[name='lastName']"));
+        safeSendKeys(enter_last_name,"varma");
+        WebElement click_save=driver.findElement(By.cssSelector("input[value='Save']"));
+        safeClick(click_save,10);
     }
 }

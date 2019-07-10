@@ -80,139 +80,139 @@ public class TC_Admin_Organization extends CommonActions {
         adminOrganization_general_information_page.validateUpdatedInformation(new_data1, input_for_new_data1);
     }
 //
-//  @Test
-//    public void validateCountOfEmployees() throws InterruptedException, IOException {
-//
-//        CommonPage commonPage = new CommonPage(driver);
-//        Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
-//        PIM_Employee_List_Page pim_employee_list_page=new PIM_Employee_List_Page(driver);
-//
-//        commonActionsProduced(url,username,password);
-//
-//        commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1, section1);
-//        adminOrganization_general_information_page.verifySectionPage(section1);
-//        int Before_Count= adminOrganization_general_information_page.validateCountOfEmployees();
-//        commonPage.selectSectionOfPIM(module_name2,sub_module_name1_of_module_name2);
-//        pim_employee_list_page.addingNewEmployee();
-//        commonPage.selectSectionOfAdmin(module_name1,sub_module_name1_of_module_name1,section1);
-//        int After_Count= adminOrganization_general_information_page.validateCountOfEmployees();
-//        Assert.assertTrue(Before_Count+1==After_Count);
-//        System.out.println("Count of Employees List Updated");
-//    }
-//  @Test
-//    public void validateMandatoryFields() throws IOException, InterruptedException {
-//
-//        CommonPage commonPage = new CommonPage(driver);
-//        Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
-//
-//        commonActionsProduced(url,username,password);
-//
-//        commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1, section1);
-//        adminOrganization_general_information_page.verifySectionPage(section1);
-//        adminOrganization_general_information_page.clickEdit();
-//        adminOrganization_general_information_page.updateDetails(new_data2,input_for_new_data2);
-//        adminOrganization_general_information_page.clickSave();
-//        adminOrganization_general_information_page.validationError();
-//
-//    }
-//   @Test
-//    public void validateNonMandatoryFields() throws InterruptedException, IOException {
-//        CommonPage commonPage = new CommonPage(driver);
-//        Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
-//
-//        commonActionsProduced(url,username,password);
-//
-//        commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1, section1);
-//        adminOrganization_general_information_page.verifySectionPage(section1);
-//        adminOrganization_general_information_page.clickEdit();
-//        adminOrganization_general_information_page.updateDetails(new_data3,input_for_new_data3);
-//        adminOrganization_general_information_page.clickSave();
-//        driver.navigate().refresh();
-//        adminOrganization_general_information_page.validateUpdatedInformation(new_data3,input_for_new_data3);
-//    }
-//    @Test
-//    public void validateSearchByAvailableLocationName() throws InterruptedException, IOException {
-//        CommonPage commonPage = new CommonPage(driver);
-//        Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
-//        Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
-//
-//        commonActionsProduced(url, username, password);
-//        commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
-//        adminOrganization_general_information_page.verifySectionPage(section2);
-//        organization_locations_page.searchByName(search_field1,Location_name1);
-//        organization_locations_page.clickSearch();
-//        organization_locations_page.resultsFound(Location_name1);
-//
-//    }
-//    @Test
-//    public void validateSearchByUnavailableLocationName() throws InterruptedException, IOException {
-//        CommonPage commonPage = new CommonPage(driver);
-//        Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
-//        Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
-//
-//        commonActionsProduced(url, username, password);
-//        commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
-//        adminOrganization_general_information_page.verifySectionPage(section2);
-//        organization_locations_page.searchByName(search_field1,Location_name2);
-//        organization_locations_page.clickSearch();
-//        organization_locations_page.resultsNotFound(Location_name2);
-//
-//    }
-//    @Test
-//    public void validateSearchByAvailableCityName() throws InterruptedException, IOException {
-//        CommonPage commonPage = new CommonPage(driver);
-//        Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
-//        Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
-//
-//        commonActionsProduced(url, username, password);
-//        commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
-//        adminOrganization_general_information_page.verifySectionPage(section2);
-//        organization_locations_page.searchByName(search_field2,City_name1);
-//        organization_locations_page.clickSearch();
-//        organization_locations_page.resultsFound(City_name1);
-//
-//    }
-//    @Test
-//    public void validateSearchByUnavailableCityName() throws InterruptedException, IOException {
-//        CommonPage commonPage = new CommonPage(driver);
-//        Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
-//        Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
-//
-//        commonActionsProduced(url, username, password);
-//        commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
-//        adminOrganization_general_information_page.verifySectionPage(section2);
-//        organization_locations_page.searchByName(search_field2,City_name2);
-//        organization_locations_page.clickSearch();
-//        organization_locations_page.resultsNotFound(City_name2);
-//
-//    }
-//    @Test
-//    public void validateSearchByAvailableCountry() throws InterruptedException, IOException {
-//        CommonPage commonPage = new CommonPage(driver);
-//        Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
-//        Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
-//
-//        commonActionsProduced(url, username, password);
-//        commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
-//        adminOrganization_general_information_page.verifySectionPage(section2);
-//        organization_locations_page.selectCountry(Country_name1);
-//        organization_locations_page.clickSearch();
-//        organization_locations_page.resultsFound(Country_name2);
-//
-//    }
-//    @Test
-//    public void validateSearchByUnavailableCountry() throws InterruptedException, IOException {
-//        CommonPage commonPage = new CommonPage(driver);
-//        Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
-//        Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
-//
-//        commonActionsProduced(url, username, password);
-//        commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
-//        adminOrganization_general_information_page.verifySectionPage(section2);
-//        organization_locations_page.selectCountry(Country_name2);
-//        organization_locations_page.clickSearch();
-//        organization_locations_page.resultsNotFound(Country_name2);
-//
-//    }
+  @Test
+    public void validateCountOfEmployees() throws InterruptedException, IOException {
+
+        CommonPage commonPage = new CommonPage(driver);
+        Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
+        PIM_EmployeeList_Page pim_employee_list_page=new PIM_EmployeeList_Page(driver);
+
+        commonActionsProduced(url,username,password);
+
+        commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1, section1);
+        adminOrganization_general_information_page.verifySectionPage(section1);
+        int Before_Count= adminOrganization_general_information_page.validateCountOfEmployees();
+        commonPage.selectSectionOfPIM(module_name2,sub_module_name1_of_module_name2);
+        pim_employee_list_page.addingNewEmployee();
+        commonPage.selectSectionOfAdmin(module_name1,sub_module_name1_of_module_name1,section1);
+        int After_Count= adminOrganization_general_information_page.validateCountOfEmployees();
+        Assert.assertTrue(Before_Count+1==After_Count);
+        System.out.println("Count of Employees List Updated");
+    }
+  @Test
+    public void validateMandatoryFields() throws IOException, InterruptedException {
+
+        CommonPage commonPage = new CommonPage(driver);
+        Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
+
+        commonActionsProduced(url,username,password);
+
+        commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1, section1);
+        adminOrganization_general_information_page.verifySectionPage(section1);
+        adminOrganization_general_information_page.clickEdit();
+        adminOrganization_general_information_page.updateDetails(new_data2,input_for_new_data2);
+        adminOrganization_general_information_page.clickSave();
+        adminOrganization_general_information_page.validationError();
+
+    }
+   @Test
+    public void validateNonMandatoryFields() throws InterruptedException, IOException {
+        CommonPage commonPage = new CommonPage(driver);
+        Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
+
+        commonActionsProduced(url,username,password);
+
+        commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1, section1);
+        adminOrganization_general_information_page.verifySectionPage(section1);
+        adminOrganization_general_information_page.clickEdit();
+        adminOrganization_general_information_page.updateDetails(new_data3,input_for_new_data3);
+        adminOrganization_general_information_page.clickSave();
+        driver.navigate().refresh();
+        adminOrganization_general_information_page.validateUpdatedInformation(new_data3,input_for_new_data3);
+    }
+    @Test
+    public void validateSearchByAvailableLocationName() throws InterruptedException, IOException {
+        CommonPage commonPage = new CommonPage(driver);
+        Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
+        Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
+
+        commonActionsProduced(url, username, password);
+        commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
+        adminOrganization_general_information_page.verifySectionPage(section2);
+        organization_locations_page.searchByName(search_field1,Location_name1);
+        organization_locations_page.clickSearch();
+        organization_locations_page.resultsFound(Location_name1);
+
+    }
+    @Test
+    public void validateSearchByUnavailableLocationName() throws InterruptedException, IOException {
+        CommonPage commonPage = new CommonPage(driver);
+        Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
+        Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
+
+        commonActionsProduced(url, username, password);
+        commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
+        adminOrganization_general_information_page.verifySectionPage(section2);
+        organization_locations_page.searchByName(search_field1,Location_name2);
+        organization_locations_page.clickSearch();
+        organization_locations_page.resultsNotFound(Location_name2);
+
+    }
+    @Test
+    public void validateSearchByAvailableCityName() throws InterruptedException, IOException {
+        CommonPage commonPage = new CommonPage(driver);
+        Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
+        Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
+
+        commonActionsProduced(url, username, password);
+        commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
+        adminOrganization_general_information_page.verifySectionPage(section2);
+        organization_locations_page.searchByName(search_field2,City_name1);
+        organization_locations_page.clickSearch();
+        organization_locations_page.resultsFound(City_name1);
+
+    }
+    @Test
+    public void validateSearchByUnavailableCityName() throws InterruptedException, IOException {
+        CommonPage commonPage = new CommonPage(driver);
+        Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
+        Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
+
+        commonActionsProduced(url, username, password);
+        commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
+        adminOrganization_general_information_page.verifySectionPage(section2);
+        organization_locations_page.searchByName(search_field2,City_name2);
+        organization_locations_page.clickSearch();
+        organization_locations_page.resultsNotFound(City_name2);
+
+    }
+    @Test
+    public void validateSearchByAvailableCountry() throws InterruptedException, IOException {
+        CommonPage commonPage = new CommonPage(driver);
+        Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
+        Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
+
+        commonActionsProduced(url, username, password);
+        commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
+        adminOrganization_general_information_page.verifySectionPage(section2);
+        organization_locations_page.selectCountry(Country_name1);
+        organization_locations_page.clickSearch();
+        organization_locations_page.resultsFound(Country_name2);
+
+    }
+    @Test
+    public void validateSearchByUnavailableCountry() throws InterruptedException, IOException {
+        CommonPage commonPage = new CommonPage(driver);
+        Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
+        Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
+
+        commonActionsProduced(url, username, password);
+        commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
+        adminOrganization_general_information_page.verifySectionPage(section2);
+        organization_locations_page.selectCountry(Country_name2);
+        organization_locations_page.clickSearch();
+        organization_locations_page.resultsNotFound(Country_name2);
+
+    }
 
 }

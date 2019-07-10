@@ -7,7 +7,7 @@
 
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 
-        <listener class-name="utilities.TestListenerClass"/>
+        <listener class-name="test_listeners.ListenerTest"/>
 
     </listeners>
     <test name = "test1">
