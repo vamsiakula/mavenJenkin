@@ -189,7 +189,7 @@ public class TC_OrangeHRM extends CommonActions {
         pim_employeeListPage.click_ON_PIM();
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.searchEmployee("None", "None", empSupervisor);
-        pim_employeeListPage.resultsfound(empId);
+        pim_employeeListPage.validate();
 
     }
 
