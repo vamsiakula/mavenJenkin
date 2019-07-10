@@ -38,6 +38,13 @@ public class TC_Admin_Organization extends CommonActions {
     String url = propertiesFile.getProperty("url");
     String username = propertiesFile.getProperty("username");
     String password = propertiesFile.getProperty("password");
+    String Edit = propertiesFile.getProperty("edit_btn");
+    String Save = propertiesFile.getProperty("save_btn");
+    String Add = propertiesFile.getProperty("add_btn");
+    String Delete = propertiesFile.getProperty("del_button");
+    String Search = propertiesFile.getProperty("search_btn");
+    String Reset = propertiesFile.getProperty("reset_btn");
+
     String module_name1 = propertiesFile.getProperty("module_name1");
     String sub_module_name1_of_module_name1 = propertiesFile.getProperty("sub_module_name1_of_module_name1");
     String section1 = propertiesFile.getProperty("section1");
@@ -70,17 +77,15 @@ public class TC_Admin_Organization extends CommonActions {
         commonActionsProduced(url, username, password);
 
         commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1, section1);
-        verifySectionPage(section1,module_name1);
-
-        clickButton(propertiesFile.getProperty("button"));
-        //adminOrganization_general_information_page.clickEdit();
+        verifySectionPage(section1, module_name1);
+        clickButton(Edit);
         adminOrganization_general_information_page.updateDetails(new_data1, input_for_new_data1);
-        adminOrganization_general_information_page.clickSave();
+        clickButton(Save);
         driver.navigate().refresh();
         adminOrganization_general_information_page.validateUpdatedInformation(new_data1, input_for_new_data1);
     }
-//
-  @Test
+
+    @Test
     public void validateCountOfEmployees() throws InterruptedException, IOException {
 
         CommonPage commonPage = new CommonPage(driver);
@@ -90,16 +95,19 @@ public class TC_Admin_Organization extends CommonActions {
         commonActionsProduced(url,username,password);
 
         commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1, section1);
-        adminOrganization_general_information_page.verifySectionPage(section1);
+        verifySectionPage(section1, module_name1);
         int Before_Count= adminOrganization_general_information_page.validateCountOfEmployees();
         commonPage.selectSectionOfPIM(module_name2,sub_module_name1_of_module_name2);
+        verifySectionPage(sub_module_name1_of_module_name2, module_name2);
+        clickButton(Add);
         pim_employee_list_page.addingNewEmployee();
+        clickButton(Save);
         commonPage.selectSectionOfAdmin(module_name1,sub_module_name1_of_module_name1,section1);
         int After_Count= adminOrganization_general_information_page.validateCountOfEmployees();
         Assert.assertTrue(Before_Count+1==After_Count);
         System.out.println("Count of Employees List Updated");
     }
-  @Test
+    @Test
     public void validateMandatoryFields() throws IOException, InterruptedException {
 
         CommonPage commonPage = new CommonPage(driver);
@@ -108,14 +116,14 @@ public class TC_Admin_Organization extends CommonActions {
         commonActionsProduced(url,username,password);
 
         commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1, section1);
-        adminOrganization_general_information_page.verifySectionPage(section1);
-        adminOrganization_general_information_page.clickEdit();
+        verifySectionPage(section1, module_name1);
+        clickButton(Edit);
         adminOrganization_general_information_page.updateDetails(new_data2,input_for_new_data2);
-        adminOrganization_general_information_page.clickSave();
+        clickButton(Save);
         adminOrganization_general_information_page.validationError();
 
     }
-   @Test
+    @Test
     public void validateNonMandatoryFields() throws InterruptedException, IOException {
         CommonPage commonPage = new CommonPage(driver);
         Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
@@ -123,10 +131,10 @@ public class TC_Admin_Organization extends CommonActions {
         commonActionsProduced(url,username,password);
 
         commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1, section1);
-        adminOrganization_general_information_page.verifySectionPage(section1);
-        adminOrganization_general_information_page.clickEdit();
+        verifySectionPage(section1, module_name1);
+        clickButton(Edit);
         adminOrganization_general_information_page.updateDetails(new_data3,input_for_new_data3);
-        adminOrganization_general_information_page.clickSave();
+        clickButton(Save);
         driver.navigate().refresh();
         adminOrganization_general_information_page.validateUpdatedInformation(new_data3,input_for_new_data3);
     }
@@ -138,9 +146,9 @@ public class TC_Admin_Organization extends CommonActions {
 
         commonActionsProduced(url, username, password);
         commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
-        adminOrganization_general_information_page.verifySectionPage(section2);
+        verifySectionPage(section2, module_name1);
         organization_locations_page.searchByName(search_field1,Location_name1);
-        organization_locations_page.clickSearch();
+        clickButton(Search);
         organization_locations_page.resultsFound(Location_name1);
 
     }
@@ -152,9 +160,9 @@ public class TC_Admin_Organization extends CommonActions {
 
         commonActionsProduced(url, username, password);
         commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
-        adminOrganization_general_information_page.verifySectionPage(section2);
+        verifySectionPage(section2, module_name1);
         organization_locations_page.searchByName(search_field1,Location_name2);
-        organization_locations_page.clickSearch();
+        clickButton(Search);
         organization_locations_page.resultsNotFound(Location_name2);
 
     }
@@ -166,9 +174,9 @@ public class TC_Admin_Organization extends CommonActions {
 
         commonActionsProduced(url, username, password);
         commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
-        adminOrganization_general_information_page.verifySectionPage(section2);
+        verifySectionPage(section2, module_name1);
         organization_locations_page.searchByName(search_field2,City_name1);
-        organization_locations_page.clickSearch();
+        clickButton(Search);
         organization_locations_page.resultsFound(City_name1);
 
     }
@@ -180,9 +188,9 @@ public class TC_Admin_Organization extends CommonActions {
 
         commonActionsProduced(url, username, password);
         commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
-        adminOrganization_general_information_page.verifySectionPage(section2);
+        verifySectionPage(section2, module_name1);
         organization_locations_page.searchByName(search_field2,City_name2);
-        organization_locations_page.clickSearch();
+        clickButton(Search);
         organization_locations_page.resultsNotFound(City_name2);
 
     }
@@ -194,9 +202,9 @@ public class TC_Admin_Organization extends CommonActions {
 
         commonActionsProduced(url, username, password);
         commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
-        adminOrganization_general_information_page.verifySectionPage(section2);
+        verifySectionPage(section2, module_name1);
         organization_locations_page.selectCountry(Country_name1);
-        organization_locations_page.clickSearch();
+        clickButton(Search);
         organization_locations_page.resultsFound(Country_name2);
 
     }
@@ -208,9 +216,9 @@ public class TC_Admin_Organization extends CommonActions {
 
         commonActionsProduced(url, username, password);
         commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
-        adminOrganization_general_information_page.verifySectionPage(section2);
+        verifySectionPage(section2, module_name1);
         organization_locations_page.selectCountry(Country_name2);
-        organization_locations_page.clickSearch();
+        clickButton(Search);
         organization_locations_page.resultsNotFound(Country_name2);
 
     }

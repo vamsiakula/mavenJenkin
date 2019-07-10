@@ -33,9 +33,9 @@ public class CommonActions extends BrowserSetUp {
     }
 
     public void clickButton(String Button) throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("input[value='"+Button+"']")));
         WebElement click_button = driver.findElement(By.cssSelector("input[value='"+Button+"']"));
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("input[value='"+Button+"']")));
         click_button.click();
     }
 }

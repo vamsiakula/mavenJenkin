@@ -74,13 +74,9 @@ public class PIM_EmployeeList_Page extends SafeActions {
         System.out.println("page reloaded");
     }
     public void addingNewEmployee() throws InterruptedException {
-        WebElement click_add=driver.findElement(By.cssSelector("input[value='Add']"));
-        safeClick(click_add,10);
         WebElement enter_first_name=driver.findElement(By.cssSelector("input[name='firstName']"));
         safeSendKeys(enter_first_name,"vamsith");
         WebElement enter_last_name=driver.findElement(By.cssSelector("input[name='lastName']"));
         safeSendKeys(enter_last_name,"varma");
-        WebElement click_save=driver.findElement(By.cssSelector("input[value='Save']"));
-        safeClick(click_save,10);
     }
 }
