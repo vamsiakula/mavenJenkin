@@ -76,7 +76,7 @@ public class TC_OrangeHRM extends CommonActions {
         empName1 = p.getProperty("empName1");
         empId2 = p.getProperty("empId2");
         empSupervisor = p.getProperty("empSupervisor");
-        empSupervisor2 = p.getProperty("empSupervisor");
+        empSupervisor2 = p.getProperty("empSupervisor2");
         status = p.getProperty("status");
         jobTitle = p.getProperty("jobTitle");
         subUnit = p.getProperty("subUnit");
@@ -258,7 +258,7 @@ public class TC_OrangeHRM extends CommonActions {
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.searchEmployee("None", "None",empSupervisor,input_name,input_id,input_supervisor);
         clickButton(search);
-        pim_employeeListPage.validate();
+        pim_employeeListPage.resultsfound(empId);
 
     }
 
@@ -294,7 +294,7 @@ public class TC_OrangeHRM extends CommonActions {
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.searchEmployee(empName,empId,empSupervisor,input_name,input_id,input_supervisor);
         clickButton(search);
-        pim_employeeListPage.validate();
+        pim_employeeListPage.resultsfound(empId);
 
     }
     @Test
