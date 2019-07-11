@@ -101,7 +101,7 @@ public class TC_Admin_Organization extends CommonActions {
 
         CommonPage commonPage = new CommonPage(driver);
         Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
-        PIM_EmployeeList_Page pim_employee_list_page=new PIM_EmployeeList_Page(driver);
+        AddEmployee_page addEmployee_page =new AddEmployee_page(driver);
 
         commonActionsProduced(url,username,password);
 
@@ -111,7 +111,7 @@ public class TC_Admin_Organization extends CommonActions {
         commonPage.selectSectionOfPIM(module_name2,sub_module_name1_of_module_name2);
         verifySectionPage(sub_module_name1_of_module_name2, module_name2);
         clickButton(Add);
-        pim_employee_list_page.addingNewEmployee(FirstName,SecondName);
+        addEmployee_page.addingNewEmployee(FirstName,SecondName,"1234");
         clickButton(Save);
         commonPage.selectSectionOfAdmin(module_name1,sub_module_name1_of_module_name1,section1);
         int After_Count= adminOrganization_general_information_page.validateCountOfEmployees();

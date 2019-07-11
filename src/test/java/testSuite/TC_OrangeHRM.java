@@ -1,6 +1,7 @@
 package testSuite;
 
 import org.testng.Assert;
+import pages.AddEmployee_page;
 import pages.CommonPage;
 import pages.PIM_EmployeeList_Page;
 
@@ -38,6 +39,21 @@ public class TC_OrangeHRM extends CommonActions {
     String input_jobtitle;
     String input_subunit;
     String add;
+    String sub_module_2_add;
+    String FirstName;
+    String LastName;
+    String personal_detail_module;
+    String save;
+    String required_string;
+    String loginCredentails_btn;
+    String login_username;
+    String login_user_password;
+    String login_re_password;
+    String login_status;
+    String Id;
+    String message1;
+    String message2;
+    String message3;
 
     {
         try {
@@ -73,7 +89,22 @@ public class TC_OrangeHRM extends CommonActions {
         input_status = p.getProperty("input_status");
         input_jobtitle = p.getProperty("input_jobtitle");
         input_subunit = p.getProperty("input_subunit");
-        add=p.getProperty("add_btn");
+        add = p.getProperty("add_btn");
+        sub_module_2_add = p.getProperty("sub_module_2_add");
+        FirstName = p.getProperty("FirstName");
+        LastName = p.getProperty("LastName");
+        personal_detail_module = p.getProperty("personal_detail_module");
+        save = p.getProperty("save_btn");
+        required_string = p.getProperty("required_string");
+        loginCredentails_btn = p.getProperty("loginCredentails_btn");
+        login_username = p.getProperty("login_username");
+        login_user_password = p.getProperty("login_user_password");
+        login_re_password = p.getProperty("login_re_password");
+        login_status = p.getProperty("login_status");
+        Id = p.getProperty("Id");
+        message1 = p.getProperty("message1");
+        message2 = p.getProperty("message2");
+        message3 = p.getProperty("message3");
     }
 
     @Test
@@ -169,7 +200,6 @@ public class TC_OrangeHRM extends CommonActions {
     public void tc_008_search() throws IOException, InterruptedException {
         CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
-
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
         commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
@@ -183,7 +213,6 @@ public class TC_OrangeHRM extends CommonActions {
     public void tc_009_search() throws IOException, InterruptedException {
         CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
-
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
         commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
@@ -198,7 +227,6 @@ public class TC_OrangeHRM extends CommonActions {
     public void tc_010_search() throws IOException, InterruptedException {
         CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
-
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
         commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
@@ -212,7 +240,6 @@ public class TC_OrangeHRM extends CommonActions {
     public void tc_011_search() throws IOException, InterruptedException {
         CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
-
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
         commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
@@ -226,7 +253,6 @@ public class TC_OrangeHRM extends CommonActions {
     public void tc_012_search() throws IOException, InterruptedException {
         CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
-
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
         commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
@@ -240,7 +266,6 @@ public class TC_OrangeHRM extends CommonActions {
     public void tc_013_search() throws IOException, InterruptedException {
         CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
-
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
         commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
@@ -253,7 +278,6 @@ public class TC_OrangeHRM extends CommonActions {
     public void tc_014_search() throws IOException, InterruptedException {
         CommonPage commonPage = new CommonPage(driver);
         commonActionsProduced(url, username, password);
-
         PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
         commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
@@ -355,14 +379,103 @@ public class TC_OrangeHRM extends CommonActions {
         clickButton(search);
         pim_employeeListPage.noInput();
     }
-//    @Test
-//    public void tc_0023_addEmployee() throws IOException, InterruptedException {
-//        CommonPage commonPage = new CommonPage(driver);
-//        commonActionsProduced(url, username, password);
-//        PIM_EmployeeList_Page pim_employeeListPage = new PIM_EmployeeList_Page(driver);
-//        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
-//        verifySectionPage("Employee List", "PIM");
-//        clickButton(add);
-//    }
+    @Test
+    public void tc_023_addEmployee() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
+        commonActionsProduced(url, username, password);
+        AddEmployee_page addEmployee_page =new AddEmployee_page(driver);
+        commonPage.selectSectionOfPIM(module_pim,module_employeeList);
+        verifySectionPage("Employee List", "PIM");
+        clickButton(add);
+        addEmployee_page.verify_page(sub_module_2_add,"Add Employee");
+    }
+    @Test
+    public void tc_024_addEmployee() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
+        commonActionsProduced(url, username, password);
+        AddEmployee_page addEmployee_page =new AddEmployee_page(driver);
+        commonPage.selectSectionOfPIM(module_pim,sub_module_2_add);
+        addEmployee_page.addingNewEmployee(FirstName,LastName,Id);
+        clickButton(save);
+        addEmployee_page.verify_page(personal_detail_module,"Personal Details");
 
+    }
+    @Test
+    public void tc_025_addEmployee() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
+        commonActionsProduced(url, username, password);
+        commonPage.selectSectionOfPIM(module_pim, sub_module_2_add);
+        clickButton(save);
+        AddEmployee_page addEmployee_page =new AddEmployee_page(driver);
+        String message=addEmployee_page.requiredMessage(message1);
+        System.out.println(message);
+    }
+    @Test
+    public void tc_026_addEmployee() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
+        commonActionsProduced(url, username, password);
+        commonPage.selectSectionOfPIM(module_pim, sub_module_2_add);
+        AddEmployee_page addEmployee_page = new AddEmployee_page(driver);
+        addEmployee_page.addingNewEmployee(FirstName, LastName, Id);
+        addEmployee_page.loginButton();
+        addEmployee_page.loginCredentials(login_username, "navyasritangudu7");
+        addEmployee_page.loginCredentials(login_user_password, "Navyasri@711");
+        addEmployee_page.loginCredentials(login_re_password, "Navyasri@711");
+        clickButton(save);
+    }
+    @Test
+    public void tc_027_addEmployee() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
+        commonActionsProduced(url, username, password);
+        commonPage.selectSectionOfPIM(module_pim, sub_module_2_add);
+        AddEmployee_page addEmployee_page =new AddEmployee_page(driver);
+        addEmployee_page.addingNewEmployee(FirstName,LastName,Id);
+        addEmployee_page.loginButton();
+        clickButton(save);
+        String message=addEmployee_page.requiredMessage(message2);
+        System.out.println(message);
+   }
+@Test
+        public void tc_028_addEmployee() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
+        commonActionsProduced(url, username, password);
+        commonPage.selectSectionOfPIM(module_pim, sub_module_2_add);
+        AddEmployee_page addEmployee_page =new AddEmployee_page(driver);
+        addEmployee_page.addingNewEmployee(FirstName, LastName, Id);
+        addEmployee_page.loginButton();
+        addEmployee_page.loginCredentials(login_username, "navyasritangudu7");
+        addEmployee_page.loginCredentials(login_user_password, "Navyasri@711");
+        addEmployee_page.loginCredentials(login_re_password, "Navyasri@712");
+        clickButton(save);
+        String message= addEmployee_page.requiredMessage(message3);
+        System.out.println(message);
+    }
+    @Test
+    public void tc_029_addEmployee() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
+        commonActionsProduced(url, username, password);
+        commonPage.selectSectionOfPIM(module_pim, sub_module_2_add);
+        AddEmployee_page addEmployee_page =new AddEmployee_page(driver);
+        addEmployee_page.addingNewEmployee(FirstName,LastName,Id);
+        addEmployee_page.loginButton();
+        addEmployee_page.loginCredentials(login_user_password, "Navyasri@711");
+        addEmployee_page.loginCredentials(login_re_password, "Navyasri@712");
+        clickButton(save);
+        String message=addEmployee_page.requiredMessage(message2);
+        System.out.println(message);
+    }
+    @Test
+    public void tc_030_addEmployee() throws IOException, InterruptedException {
+        CommonPage commonPage = new CommonPage(driver);
+        commonActionsProduced(url, username, password);
+        commonPage.selectSectionOfPIM(module_pim, sub_module_2_add);
+        AddEmployee_page addEmployee_page =new AddEmployee_page(driver);
+        addEmployee_page.addingNewEmployee(FirstName,LastName,Id);
+        addEmployee_page.loginButton();
+        addEmployee_page.loginCredentials(login_username,"navyasritangudu7");
+        addEmployee_page.loginCredentials(login_user_password,"Navyasri@711");
+        addEmployee_page.loginCredentials(login_re_password,"Navyasri@711");
+        clickButton(save);
+        addEmployee_page.verify_page(sub_module_2_add,"Add Employee");
+    }
 }
