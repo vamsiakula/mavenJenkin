@@ -46,6 +46,9 @@ public class TC_Admin_Organization extends CommonActions {
     String Search = propertiesFile.getProperty("search_btn");
     String Reset = propertiesFile.getProperty("reset_btn");
 
+    String FirstName=propertiesFile.getProperty("FirstName");
+    String SecondName=propertiesFile.getProperty("SecondName");
+
     String module_name1 = propertiesFile.getProperty("module_name1");
     String sub_module_name1_of_module_name1 = propertiesFile.getProperty("sub_module_name1_of_module_name1");
     String section1 = propertiesFile.getProperty("section1");
@@ -108,7 +111,7 @@ public class TC_Admin_Organization extends CommonActions {
         commonPage.selectSectionOfPIM(module_name2,sub_module_name1_of_module_name2);
         verifySectionPage(sub_module_name1_of_module_name2, module_name2);
         clickButton(Add);
-        pim_employee_list_page.addingNewEmployee();
+        pim_employee_list_page.addingNewEmployee(FirstName,SecondName);
         clickButton(Save);
         commonPage.selectSectionOfAdmin(module_name1,sub_module_name1_of_module_name1,section1);
         int After_Count= adminOrganization_general_information_page.validateCountOfEmployees();

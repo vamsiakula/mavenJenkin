@@ -73,10 +73,10 @@ public class PIM_EmployeeList_Page extends SafeActions {
         //Assert.assertEquals(emptySearch.getAttribute("value").equals("Employee List"));
         System.out.println("page reloaded");
     }
-    public void addingNewEmployee() throws InterruptedException {
+    public void addingNewEmployee(String FirstName,String SecondName) throws InterruptedException {
         WebElement enter_first_name=driver.findElement(By.cssSelector("input[name='firstName']"));
-        safeSendKeys(enter_first_name,"vamsith");
+        safeSendKeys(enter_first_name,FirstName);
         WebElement enter_last_name=driver.findElement(By.cssSelector("input[name='lastName']"));
-        safeSendKeys(enter_last_name,"varma");
+        safeSendKeys(enter_last_name,SecondName);
     }
 }
