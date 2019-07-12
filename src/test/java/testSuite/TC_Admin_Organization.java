@@ -53,6 +53,8 @@ public class TC_Admin_Organization extends CommonActions {
 
 	String FirstName=propertiesFile.getProperty("FirstName");
     String SecondName=propertiesFile.getProperty("SecondName");
+    String empId = propertiesFile.getProperty("empId");
+
 
     String module_name1 = propertiesFile.getProperty("module_name1");
     String sub_module_name1_of_module_name1 = propertiesFile.getProperty("sub_module_name1_of_module_name1");
@@ -119,7 +121,7 @@ public class TC_Admin_Organization extends CommonActions {
         commonPage.selectSectionOfPIM(module_name2,sub_module_name1_of_module_name2);
         verifySectionPage(sub_module_name1_of_module_name2, module_name2);
         clickButton(Add);
-        addEmployee_page.addingNewEmployee(FirstName,SecondName,"1234");
+        addEmployee_page.addingNewEmployee(FirstName,SecondName,empId);
         clickButton(Save);
         commonPage.selectSectionOfAdmin(module_name1,sub_module_name1_of_module_name1,section1);
         int After_Count= adminOrganization_general_information_page.validateCountOfEmployees();
@@ -158,7 +160,23 @@ public class TC_Admin_Organization extends CommonActions {
         adminOrganization_general_information_page.validateUpdatedInformation(data_to_be_updated3,input_for_data_to_be_updated3);
     }
     @Test
-    public void TC_005_validateSearchByAvailableLocationName() throws InterruptedException, IOException {
+
+    public void TC_005_verifyAddingNewCity() throws InterruptedException, IOException {
+        CommonPage commonPage = new CommonPage(driver);
+        Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
+        Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
+
+        commonActionsProduced(url, username, password);
+        commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
+        verifySectionPage(section2, module_name1);
+        clickButton(Add);
+        organization_locations_page.searchByName(search_field1,Name_of_the_location_to_be_added);
+        organization_locations_page.searchByName(search_field2,Name_of_the_city_to_be_added);
+        organization_locations_page.selectCountry(Name_of_the_country_to_be_added);
+        clickButton(Save);
+    }
+    @Test
+    public void TC_006_validateSearchByAvailableLocationName() throws InterruptedException, IOException {
         CommonPage commonPage = new CommonPage(driver);
         Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
         Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
@@ -172,7 +190,7 @@ public class TC_Admin_Organization extends CommonActions {
 
     }
     @Test
-    public void TC_006_validateSearchByUnavailableLocationName() throws InterruptedException, IOException {
+    public void TC_007_validateSearchByUnavailableLocationName() throws InterruptedException, IOException {
         CommonPage commonPage = new CommonPage(driver);
         Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
         Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
@@ -186,7 +204,7 @@ public class TC_Admin_Organization extends CommonActions {
 
     }
     @Test
-    public void TC_007_validateSearchByAvailableCityName() throws InterruptedException, IOException {
+    public void TC_008_validateSearchByAvailableCityName() throws InterruptedException, IOException {
         CommonPage commonPage = new CommonPage(driver);
         Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
         Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
@@ -200,7 +218,7 @@ public class TC_Admin_Organization extends CommonActions {
 
     }
     @Test
-    public void TC_008_validateSearchByUnavailableCityName() throws InterruptedException, IOException {
+    public void TC_009_validateSearchByUnavailableCityName() throws InterruptedException, IOException {
         CommonPage commonPage = new CommonPage(driver);
         Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
         Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
@@ -214,7 +232,7 @@ public class TC_Admin_Organization extends CommonActions {
 
     }
     @Test
-    public void TC_009_validateSearchByAvailableCountry() throws InterruptedException, IOException {
+    public void TC_010_validateSearchByAvailableCountry() throws InterruptedException, IOException {
         CommonPage commonPage = new CommonPage(driver);
         Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
         Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
@@ -228,7 +246,7 @@ public class TC_Admin_Organization extends CommonActions {
 
     }
     @Test
-    public void TC_010_validateSearchByUnavailableCountry() throws InterruptedException, IOException {
+    public void TC_011_validateSearchByUnavailableCountry() throws InterruptedException, IOException {
         CommonPage commonPage = new CommonPage(driver);
         Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
         Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
@@ -242,7 +260,7 @@ public class TC_Admin_Organization extends CommonActions {
 
     }
    @Test
-   public void TC_011_validateOptionsBar() throws InterruptedException, IOException {
+   public void TC_012_validateOptionsBar() throws InterruptedException, IOException {
        CommonPage commonPage = new CommonPage(driver);
        Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
        Admin_Organization_Locations_page organization_locations_page = new Admin_Organization_Locations_page(driver);
@@ -253,22 +271,7 @@ public class TC_Admin_Organization extends CommonActions {
        organization_locations_page.validateHidingOptionsBar();
 
    }
-    @Test
 
-	public void TC_012_verifyAddingNewCity() throws InterruptedException, IOException {
-		CommonPage commonPage = new CommonPage(driver);
-		Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
-		Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
-
-		commonActionsProduced(url, username, password);
-		commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
-		verifySectionPage(section2, module_name1);
-		clickButton(Add);
-		organization_locations_page.searchByName(search_field1,Name_of_the_location_to_be_added);
-		organization_locations_page.searchByName(search_field2,Name_of_the_city_to_be_added);
-		organization_locations_page.selectCountry(Name_of_the_country_to_be_added);
-		clickButton(Save);
-	}
 
     @Test
     public void TC_013_validateUpdatedCityInfo() throws InterruptedException, IOException {
