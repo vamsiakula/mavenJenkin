@@ -45,8 +45,13 @@ public class TC_Admin_Organization extends CommonActions {
     String Delete = propertiesFile.getProperty("del_button");
     String Search = propertiesFile.getProperty("search_btn");
     String Reset = propertiesFile.getProperty("reset_btn");
+    String OK = propertiesFile.getProperty("ok_btn");
 
-    String FirstName=propertiesFile.getProperty("FirstName");
+	String add_action = propertiesFile.getProperty("add_action");
+	String remove_action = propertiesFile.getProperty("remove_action");
+
+
+	String FirstName=propertiesFile.getProperty("FirstName");
     String SecondName=propertiesFile.getProperty("SecondName");
 
     String module_name1 = propertiesFile.getProperty("module_name1");
@@ -78,6 +83,9 @@ public class TC_Admin_Organization extends CommonActions {
     String Country_name2 = propertiesFile.getProperty("Country_name2");
     String Name_of_the_country_to_be_added=propertiesFile.getProperty("Name_of_the_country_to_be_added");
 
+	String base_unit = propertiesFile.getProperty("base_unit");
+	String remove_unit = propertiesFile.getProperty("remove_unit");
+	String add_unit = propertiesFile.getProperty("add_unit");
 
    @Test
     public void TC_001_updatingGeneralInformation() throws IOException, InterruptedException {
@@ -246,20 +254,22 @@ public class TC_Admin_Organization extends CommonActions {
 
    }
     @Test
-    public void TC_012_verifyAddingNewCity() throws InterruptedException, IOException {
-        CommonPage commonPage = new CommonPage(driver);
-        Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
-        Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
 
-        commonActionsProduced(url, username, password);
-        commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
-        verifySectionPage(section2, module_name1);
-        clickButton(Add);
-        organization_locations_page.searchByName(search_field1,Name_of_the_location_to_be_added);
-        organization_locations_page.searchByName(search_field2,Name_of_the_city_to_be_added);
-        organization_locations_page.selectCountry(Name_of_the_country_to_be_added);
-        clickButton(Save);
-    }
+	public void TC_012_verifyAddingNewCity() throws InterruptedException, IOException {
+		CommonPage commonPage = new CommonPage(driver);
+		Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
+		Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
+
+		commonActionsProduced(url, username, password);
+		commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
+		verifySectionPage(section2, module_name1);
+		clickButton(Add);
+		organization_locations_page.searchByName(search_field1,Name_of_the_location_to_be_added);
+		organization_locations_page.searchByName(search_field2,Name_of_the_city_to_be_added);
+		organization_locations_page.selectCountry(Name_of_the_country_to_be_added);
+		clickButton(Save);
+	}
+
     @Test
     public void TC_013_validateUpdatedCityInfo() throws InterruptedException, IOException {
         CommonPage commonPage = new CommonPage(driver);
@@ -277,5 +287,90 @@ public class TC_Admin_Organization extends CommonActions {
         organization_locations_page.clickCity(Name_of_the_location_to_be_added);
         organization_locations_page.validateUpdatedInformation(data_to_be_updated4, input_for_data_to_be_updated4);
     }
+  @Test
+    public void TC_014_deletingExistedLocation() throws IOException, InterruptedException {
+      CommonPage commonPage = new CommonPage(driver);
+      Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
+      Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
+
+      commonActionsProduced(url, username, password);
+      commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
+      verifySectionPage(section2, module_name1);
+      organization_locations_page.deletedExistedLocation(Name_of_the_location_to_be_added);
+      clickButton(Delete);
+      organization_locations_page.clickOk();
+      driver.navigate().refresh();
+      organization_locations_page.searchByName(search_field1,Name_of_the_location_to_be_added);
+      clickButton(Search);
+      organization_locations_page.resultsNotFound(Name_of_the_location_to_be_added);
+  }
+	@Test
+	public void TC_015_validateReset() throws IOException, InterruptedException {
+		CommonPage commonPage = new CommonPage(driver);
+		Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
+		Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
+
+		commonActionsProduced(url, username, password);
+		commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section2 );
+		verifySectionPage(section2, module_name1);
+		organization_locations_page.searchByName(search_field1,Location_name1);
+		clickButton(Search);
+		organization_locations_page.resultsFound(Location_name1);
+		clickButton(Reset);
+		organization_locations_page.validateReset(search_field1);
+
+	}
+
+  @Test
+  public void TC_016_removeUnitOfStructure() throws IOException, InterruptedException {
+	  CommonPage commonPage = new CommonPage(driver);
+	  Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
+	  Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
+	  Admin_Organization_Structure_page structurePage=new Admin_Organization_Structure_page(driver);
+
+	  commonActionsProduced(url, username, password);
+	  commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section3 );
+	  verifySectionPage(section3, module_name1);
+	  clickButton(Edit);
+	  structurePage.editUnit(remove_unit,remove_action);
+	  structurePage.clickOk();
+	  driver.navigate().refresh();
+	  structurePage.validateEditedUnit(remove_unit);
+  }
+	@Test
+	public void TC_017_addUnitOfStructure() throws IOException, InterruptedException {
+		CommonPage commonPage = new CommonPage(driver);
+		Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
+		Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
+		Admin_Organization_Structure_page structurePage=new Admin_Organization_Structure_page(driver);
+
+		commonActionsProduced(url, username, password);
+		commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section3 );
+		verifySectionPage(section3, module_name1);
+		clickButton(Edit);
+		structurePage.editUnit(base_unit,add_action);
+		structurePage.editDetails(add_unit);
+		clickButton(Save);
+		driver.navigate().refresh();
+		structurePage.validateEditedUnit(add_unit);
+	}
+	@Test
+	public void TC_018_updateUnitOfStructure() throws IOException, InterruptedException {
+		CommonPage commonPage = new CommonPage(driver);
+		Admin_Organization_General_Information_page adminOrganization_general_information_page = new Admin_Organization_General_Information_page(driver);
+		Admin_Organization_Locations_page organization_locations_page=new Admin_Organization_Locations_page(driver);
+		Admin_Organization_Structure_page structurePage=new Admin_Organization_Structure_page(driver);
+
+		commonActionsProduced(url, username, password);
+		commonPage.selectSectionOfAdmin(module_name1, sub_module_name1_of_module_name1,section3 );
+		verifySectionPage(section3, module_name1);
+		clickButton(Edit);
+		structurePage.clickUnit(add_unit);
+		structurePage.editDetails(remove_unit);
+		clickButton(Save);
+		driver.navigate().refresh();
+		structurePage.validateEditedUnit(remove_unit);
+	}
+
 
 }
