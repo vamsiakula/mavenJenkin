@@ -16,6 +16,7 @@ public class CommonActions extends BrowserSetUp {
 
     public void commonActionsProduced(String url, String userName, String password) throws IOException, InterruptedException {
         //open application
+        Log.info("OrangeHrm application is opened");
         openApplication(url);
         //login to application
         LoginPage loginPage = new LoginPage(driver);
@@ -37,5 +38,6 @@ public class CommonActions extends BrowserSetUp {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("input[value='"+Button+"']")));
         click_button.click();
+        Log.info(Button+" "+"Button is clicked");
     }
 }

@@ -1,6 +1,15 @@
 package utilities;
 import org.apache.log4j.Logger;
-public class Log {private static Logger Log = Logger.getLogger(Log.class.getName());
+
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Log {
+    static{
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy-hh-mm-ss");
+        System.setProperty("current.date.time", dateFormat.format(new Date()));
+    }private static Logger Log = Logger.getLogger(Log.class.getName());
 
     //We can use it when starting tests
     public static void startLog (String testClassName){

@@ -32,8 +32,9 @@ public class BrowserSetUp  {
 
         if (browserName.equals("chrome")) {
             System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
-            Log.startLog("test started");
+            Log.info("test case started");
             driver = new ChromeDriver();
+            Log.info("browser is launched");
             driver.manage().window().maximize();
         }
         else if (browserName.equals("firefox")){
@@ -46,13 +47,14 @@ public class BrowserSetUp  {
     }
 
     public  void openApplication(String url)  {
-        Log.endLog("test ended");
+
         driver.get(url);
     }
 
     @AfterMethod
     public void closeBrowser(){
-        driver.close();
+
+        Log.info("test case ended");driver.close();
     }
     public void takeScreenShot(String screenshot) throws IOException {
         System.setProperty("org.uncommons.reportng.escape-output", "false");

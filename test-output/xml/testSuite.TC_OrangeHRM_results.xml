@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="10.451">
+           time="11.088">
   <properties />
   
   
-            <testcase name="tc_001_validateSearch_ValidEmpName" time="10.451" classname="testSuite.TC_OrangeHRM" />
+            <testcase name="tc_001_validateSearch_ValidEmpName" time="11.088" classname="testSuite.TC_OrangeHRM" />
       
 </testsuite>

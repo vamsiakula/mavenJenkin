@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import utilities.Log;
 import utilities.SafeActions;
 
 public class PIM_EmployeeList_Page extends SafeActions {
@@ -23,15 +24,17 @@ public class PIM_EmployeeList_Page extends SafeActions {
         String supervisor_string = "empsearch_" + input_superviosr;
         if (empName != "None") {
             WebElement employeeName = driver.findElement(By.id(name_string));
-            employeeName.sendKeys(empName);
+
+            employeeName.sendKeys(empName); Log.info("empname is provided");
         }
         if (empId != "None") {
             WebElement employeeId = driver.findElement(By.id(id_string));
-            employeeId.sendKeys(empId);
+
+            employeeId.sendKeys(empId);Log.info("empid  is provided");
         }
         if (empSupervisor != "None") {
             WebElement employeeSupervisor = driver.findElement(By.id(supervisor_string));
-            employeeSupervisor.sendKeys(empSupervisor);
+            employeeSupervisor.sendKeys(empSupervisor);Log.info("supervisor name is provided");
         }
     }
 
