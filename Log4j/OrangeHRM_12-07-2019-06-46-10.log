@@ -1,0 +1,10 @@
+2019-07-12 18:46:10 INFO  Log:21 - Launched Chrome Browser
+2019-07-12 18:46:15 INFO  Log:31 - TC_001_updatingGeneralInformation test case started
+2019-07-12 18:46:15 INFO  Log:31 - The URL of Orange HRM is loaded
+2019-07-12 18:46:19 INFO  Log:31 - Login Page of Orange HRM is displayed
+2019-07-12 18:46:19 INFO  Log:31 - username:Admin
+2019-07-12 18:46:19 INFO  Log:31 - username:admin123
+2019-07-12 18:46:19 INFO  Log:31 - user successfully logged in
+2019-07-12 18:46:21 INFO  Log:31 - Home Page of Orange HRM is displayed
+2019-07-12 18:46:25 INFO  Log:31 - The name of the testcase passed is :TC_001_updatingGeneralInformation
+2019-07-12 18:46:25 INFO  Log:26 - Closed the Browser

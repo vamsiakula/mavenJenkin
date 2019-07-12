@@ -8,7 +8,7 @@ import utilities.SafeActions;
 
 import java.sql.SQLOutput;
 
-public class PIM_Config_Optional_Fields_Page extends CommonPageActions {
+public class PIM_Config_Optional_Fields_Page extends SafeActions {
 //    public WebDriver driver;
     public PIM_Config_Optional_Fields_Page(WebDriver driver) {
         super(driver);

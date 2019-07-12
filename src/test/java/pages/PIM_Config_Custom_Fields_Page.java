@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utilities.SafeActions;
 
-public class PIM_Config_Custom_Fields_Page extends CommonPageActions {
+public class PIM_Config_Custom_Fields_Page extends SafeActions {
 //    public WebDriver driver;
     public PIM_Config_Custom_Fields_Page(WebDriver driver) {
         super(driver);

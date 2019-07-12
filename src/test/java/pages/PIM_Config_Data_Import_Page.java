@@ -4,8 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utilities.SafeActions;
 
-public class PIM_Config_Data_Import_Page extends CommonPageActions {
+public class PIM_Config_Data_Import_Page extends SafeActions {
 //    public WebDriver driver;
 
     public PIM_Config_Data_Import_Page(WebDriver driver) {

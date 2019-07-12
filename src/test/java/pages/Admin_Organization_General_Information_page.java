@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import utilities.Log;
 import utilities.SafeActions;
 
 public class Admin_Organization_General_Information_page extends SafeActions {
@@ -24,6 +25,7 @@ public class Admin_Organization_General_Information_page extends SafeActions {
     }
     public void updateDetails(String New_Data,String Input_Data){
         WebElement update_data=driver.findElement(By.xpath("//label[text()='"+New_Data+"']/following-sibling::input[@type='text']"));
+        Log.info(""+New_Data+" is updated with "+Input_Data+"");
         update_data.clear();
         safeSendKeys(update_data,Input_Data);
     }
@@ -36,6 +38,7 @@ public class Admin_Organization_General_Information_page extends SafeActions {
         WebElement update_data=driver.findElement(By.xpath("//label[text()='"+New_Data+"']/following-sibling::input[@type='text']"));
         String Updated_Data=update_data.getAttribute("value");
         Assert.assertTrue(Input_Data.equals(Updated_Data));
+        Log.info("Information Updated Successfully");
         System.out.println("Information Updated Successfully");
     }
     public int validateCountOfEmployees(){
