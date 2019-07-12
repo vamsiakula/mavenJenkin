@@ -117,7 +117,7 @@ public class TC_OrangeHRM extends CommonActions {
         pim_employeeListPage.searchEmployee(empName, "None", "None",input_name,input_name,input_supervisor);
         clickButton(search);
         pim_employeeListPage.resultsfound(empId);
-    }
+    }/*
 
     @Test
     public void tc_002_validateSearch_InvalidEmpName() throws IOException, InterruptedException {
@@ -476,5 +476,5 @@ public class TC_OrangeHRM extends CommonActions {
         addEmployee_page.loginCredentials(login_re_password,"Navyasri@711");
         clickButton(save);
         addEmployee_page.verify_page(sub_module_2_add,"Add Employee");
-    }
+    }*/
 }
