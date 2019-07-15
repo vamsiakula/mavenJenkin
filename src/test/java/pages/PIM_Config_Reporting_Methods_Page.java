@@ -3,8 +3,9 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import utilities.SafeActions;
 
-public class PIM_Config_Reporting_Methods_Page extends CommonPageActions{
+public class PIM_Config_Reporting_Methods_Page extends SafeActions {
     public PIM_Config_Reporting_Methods_Page(WebDriver driver) {
         super(driver);
         this.driver = driver;

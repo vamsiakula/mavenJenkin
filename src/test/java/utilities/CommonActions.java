@@ -29,6 +29,7 @@ public class CommonActions extends BrowserSetUp {
     }
     public void verifySectionPage(String Title, String Module) {
         WebElement welcomeNote = driver.findElement(By.xpath("//*[text()='" + Title + "']"));
+        Log.info("" + Title + " Page of " + Module + " module of Orange HRM is displayed.");
         welcomeNote.isDisplayed();
         System.out.println("" + Title + " Page of " + Module + " module of Orange HRM is displayed");
     }
@@ -37,6 +38,7 @@ public class CommonActions extends BrowserSetUp {
         WebElement click_button = driver.findElement(By.cssSelector("input[value='"+Button+"']"));
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("input[value='"+Button+"']")));
+        Log.info(""+Button+" button is clicked.");
         click_button.click();
         Log.info(Button+" "+"Button is clicked");
     }

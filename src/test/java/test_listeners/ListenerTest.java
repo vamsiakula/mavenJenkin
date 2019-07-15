@@ -15,12 +15,15 @@ public class ListenerTest extends BrowserSetUp implements ITestListener{
     @Override
     public void onTestStart(ITestResult Result) {
         System.out.println(Result.getName()+" test case started");
+        Log.info(Result.getName()+" test case started");
 
     }
 
     @Override
     public void onTestSuccess(ITestResult Result) {
         System.out.println("The name of the testcase passed is :"+Result.getName());
+        Log.info("The name of the testcase passed is :"+Result.getName());
+
 
 
     }
@@ -43,6 +46,7 @@ public class ListenerTest extends BrowserSetUp implements ITestListener{
     @Override
     public void onTestSkipped(ITestResult Result) {
         System.out.println("The name of the testcase Skipped is :"+Result.getName());
+        Log.warn("The name of the testcase Skipped is :"+Result.getName());
 
     }
 

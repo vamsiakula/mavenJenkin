@@ -31,13 +31,13 @@ public class BrowserSetUp  {
     public void openBrowser(String browserName, ITestResult Result) throws IOException {
 
         if (browserName.equals("chrome")) {
+            Log.info("Launched Chrome Browser");
             System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
-            Log.info("test case started");
             driver = new ChromeDriver();
-            Log.info("browser is launched");
             driver.manage().window().maximize();
         }
         else if (browserName.equals("firefox")){
+            Log.info("Launched Chrome FireFox");
             System.setProperty("webdriver.gecko.driver", "resources/geckodriver.exe");
             driver = new FirefoxDriver();
             driver.manage().window().maximize();
@@ -47,14 +47,14 @@ public class BrowserSetUp  {
     }
 
     public  void openApplication(String url)  {
-
+        Log.info("he URL of Orange HRM is loaded");
         driver.get(url);
     }
 
     @AfterMethod
     public void closeBrowser(){
-        Log.info("browser is closed");
-        Log.info("test case ended");driver.close();
+        Log.info("Closed the Browser");
+        driver.close();
     }
     public void takeScreenShot(String screenshot) throws IOException {
         System.setProperty("org.uncommons.reportng.escape-output", "false");
@@ -63,19 +63,11 @@ public class BrowserSetUp  {
 
 
         File screenshotName = new File(Path +"failed_"+screenshot+".jpg");
-        //Now add screenshot to results by copying the file
+
         FileHandler.copy(scrFile, screenshotName);
-//        String URL="http://localhost:63342/OrangeHRM/test-output/html/index.html?_ijt=k9f9p5rsibtv6coh798nbco35g​​​​​​​";
-//        Reporter.log("<a href= "+ URL+" >click to open screenshot</a>");
+
         Reporter.log("<br>  <img src='"+screenshotName+"' height='100' width='100' /><br>");
         Reporter.log("<a href='"+screenshotName+"'>screenshot</a>");
-      //  Reporter.log("<a href="+"Screenshots/report.png"+">Screenshot</a>");
 
-//        File srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-//        try {
-//            FileHandler.copy(srcFile,new File("D:\\OrangeHRM\\ScreenShots\\"+"failed_"+screenshot+".jpg"));
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
     }
 }
