@@ -80,9 +80,7 @@ public class Admin_Organization_Locations_page extends SafeActions {
         String value;
         WebElement index=driver.findElement(By.xpath("//*[text()='"+locationName+"']"));
         string=index.getAttribute("href");
-       // value=string.substring(string.length() - 1);
         StringBuffer num = new StringBuffer();
-
         {
 
             for (int i = string.length()-1; i >0; i--)
@@ -93,9 +91,7 @@ public class Admin_Organization_Locations_page extends SafeActions {
 
             }
             value= String.valueOf((num.reverse()));
-            //System.out.println(num.reverse());
         }
-
         WebElement checkbox=driver.findElement(By.cssSelector("[type='checkbox'][value='"+value+"']"));
         Log.info("The checkbox of "+locationName+" is enabled.");
         safeClick(checkbox,10);

@@ -29,6 +29,7 @@ public class BrowserSetUp  {
     @BeforeMethod
     @Parameters({"browser"})
     public void openBrowser(String browserName, ITestResult Result) throws IOException {
+        Log.info("test case started");
 
         if (browserName.equals("chrome")) {
             Log.info("Launched Chrome Browser");
@@ -47,7 +48,7 @@ public class BrowserSetUp  {
     }
 
     public  void openApplication(String url)  {
-        Log.info("he URL of Orange HRM is loaded");
+        Log.info("The URL of Orange HRM is loaded");
         driver.get(url);
     }
 
@@ -55,6 +56,7 @@ public class BrowserSetUp  {
     public void closeBrowser(){
         Log.info("Closed the Browser");
         driver.close();
+        Log.info("test case ended");
     }
     public void takeScreenShot(String screenshot) throws IOException {
         System.setProperty("org.uncommons.reportng.escape-output", "false");
