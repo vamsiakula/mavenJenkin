@@ -12,6 +12,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+import utilities.Log;
 import utilities.SafeActions;
 
 import java.io.File;
@@ -31,7 +32,9 @@ public class BrowserSetUp  {
 
         if (browserName.equals("chrome")) {
             System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
+            Log.info("test case started");
             driver = new ChromeDriver();
+            Log.info("browser is launched");
             driver.manage().window().maximize();
         }
         else if (browserName.equals("firefox")){
@@ -44,12 +47,14 @@ public class BrowserSetUp  {
     }
 
     public  void openApplication(String url)  {
+
         driver.get(url);
     }
 
     @AfterMethod
     public void closeBrowser(){
-        driver.close();
+        Log.info("browser is closed");
+        Log.info("test case ended");driver.close();
     }
     public void takeScreenShot(String screenshot) throws IOException {
         System.setProperty("org.uncommons.reportng.escape-output", "false");

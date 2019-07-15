@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import utilities.Log;
 
 import java.io.IOException;
 
@@ -30,8 +31,10 @@ public class ListenerTest extends BrowserSetUp implements ITestListener{
         System.out.println("The name of the testcase failed is :"+Result.getName());
         driver=(WebDriver)Result.getAttribute("result");
         try {
+            Log.warn("The name of the testcase failed is :"+Result.getName());
             takeScreenShot(Result.getMethod().getMethodName());
         } catch (IOException e) {
+            Log.error("taking screenshot got failed");
             e.printStackTrace();
         }
     }
