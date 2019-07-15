@@ -1,9 +1,0 @@
-2019-07-12 19:06:30 INFO  Log:21 - Launched Chrome Browser
-2019-07-12 19:06:34 INFO  Log:31 - TC_001_updatingGeneralInformation test case started
-2019-07-12 19:06:34 INFO  Log:31 - The URL of Orange HRM is loaded
-2019-07-12 19:06:38 INFO  Log:31 - Login Page of Orange HRM is displayed
-2019-07-12 19:06:38 INFO  Log:31 - username:Admin
-2019-07-12 19:06:38 INFO  Log:31 - username:admin1234
-2019-07-12 19:06:39 INFO  Log:31 - Credentials Submitted
-2019-07-12 19:06:39 WARN  Log:36 - The name of the testcase failed is :TC_001_updatingGeneralInformation
-2019-07-12 19:06:40 INFO  Log:26 - Closed the Browser

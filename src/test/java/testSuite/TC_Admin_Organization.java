@@ -78,7 +78,7 @@ public class TC_Admin_Organization extends CommonActions {
 	String Location_name1 = propertiesFile.getProperty("Location_name1");
 	String Location_name2 = propertiesFile.getProperty("Location_name2");
 	String Name_of_the_location_to_be_added = propertiesFile.getProperty("Name_of_the_location_to_be_added");
-	String City_name1 = propertiesFile.getProperty("City_name1");
+	String City_name1 = propertiesFile.getProperty("Name_of_the_city_to_be_added");
 	String City_name2 = propertiesFile.getProperty("City_name2");
 	String Name_of_the_city_to_be_added = propertiesFile.getProperty("Name_of_the_city_to_be_added");
 	String Country_name1 = propertiesFile.getProperty("Country_name1");
@@ -107,7 +107,7 @@ public class TC_Admin_Organization extends CommonActions {
 	}
 
 
-    /*@Test
+   @Test
     public void TC_002_validateCountOfEmployees() throws InterruptedException, IOException {
 
         CommonPage commonPage = new CommonPage(driver);
@@ -374,7 +374,7 @@ public class TC_Admin_Organization extends CommonActions {
 		clickButton(Save);
 		driver.navigate().refresh();
 		structurePage.validateEditedUnit(remove_unit);
-	}*/
+	}
 
 
 }

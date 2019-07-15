@@ -23,10 +23,10 @@ public class LoginPage extends SafeActions {
     }
     public void userLogin(String Username,String Password) throws InterruptedException {
         WebElement username=driver.findElement(By.cssSelector("[name='txtUsername']"));
-        Log.info("username:"+Username+"");
+        Log.info("Enter username:"+Username+"");
         safeSendKeys(username,Username);
         WebElement password=driver.findElement(By.cssSelector("[name='txtPassword']"));
-        Log.info("password:"+Password+"");
+        Log.info("Enter password:"+Password+"");
         safeSendKeys(password,Password);
         WebElement login = driver.findElement(By.cssSelector("[name='Submit']"));
         safeClick(login, 10);

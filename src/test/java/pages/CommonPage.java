@@ -18,24 +18,24 @@ public class CommonPage extends SafeActions {
 
     public void selectSectionOfAdmin(String Module1, String SubModule, String SectionName) throws InterruptedException {
         WebElement select_module = driver.findElement(By.xpath("//b[text()='" + Module1 + "']"));
-        Log.info(""+Module1+" is found");
+        Log.info("The module "+Module1+" is found");
         Actions action = new Actions(driver);
         action.moveToElement(select_module).build().perform();
         WebElement select_sub_module = driver.findElement(By.xpath("//a[text()='" + SubModule + "']"));
-        Log.info(""+SubModule+" is found");
+        Log.info("The sub-module "+SubModule+" is found");
         action.moveToElement(select_sub_module).build().perform();
         WebElement general_information = driver.findElement(By.xpath("//a[text()='" + SectionName + "']"));
-        Log.info(""+SectionName+" is clicked");
+        Log.info("The section "+SectionName+" is clicked");
         safeClick(general_information, 10L);
     }
 
     public void selectSectionOfPIM(String Module2, String SubModule) throws InterruptedException {
         WebElement select_module = driver.findElement(By.xpath("//b[text()='" + Module2 + "']"));
-        Log.info(""+Module2+" is found");
+        Log.info("The module "+Module2+" is found");
         Actions action = new Actions(driver);
         action.moveToElement(select_module).build().perform();
         WebElement select_sub_module = driver.findElement(By.xpath("//a[text()='" + SubModule + "']"));
-        Log.info(""+SubModule+" is clicked");
+        Log.info("The sub-module "+SubModule+" is clicked");
         action.moveToElement(select_sub_module).click().build().perform();
 
     }
