@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Orange HRM Regression Test"
+           tests="18"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="163.486">
+  <properties />
+  
+  
+            <testcase name="TC_013_validateUpdatedCityInfo" time="10.719" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="TC_011_validateSearchByUnavailableCountry" time="7.974" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="TC_017_addUnitOfStructure" time="9.870" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="TC_018_updateUnitOfStructure" time="10.455" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="TC_005_verifyAddingNewCity" time="9.907" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="TC_007_validateSearchByUnavailableLocationName" time="8.490" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="TC_002_validateCountOfEmployees" time="11.920" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="TC_006_validateSearchByAvailableLocationName" time="8.727" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="TC_015_validateReset" time="8.742" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="TC_010_validateSearchByAvailableCountry" time="8.165" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="TC_014_deletingExistedLocation" time="9.575" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="TC_012_validateOptionsBar" time="7.727" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="TC_004_validateNonMandatoryFields" time="9.015" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="TC_009_validateSearchByUnavailableCityName" time="8.095" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="TC_008_validateSearchByAvailableCityName" time="8.597" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="TC_003_validateMandatoryFields" time="7.371" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="TC_001_updatingGeneralInformation" time="9.058" classname="testSuite.TC_Admin_Organization" />
+                <testcase name="TC_016_removeUnitOfStructure" time="9.079" classname="testSuite.TC_Admin_Organization" />
+      
+</testsuite>
