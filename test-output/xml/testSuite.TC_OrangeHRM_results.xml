@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Orange HRM Regression Test"
+           tests="30"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="302.404">
+  <properties />
+  
+  
+            <testcase name="tc_013_validateSearch_InvalidSupervisorName" time="9.387" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_007_validateSearch_EmpSubUnit" time="10.402" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_021_validateSearch_ValidEmpName_InvalidEmpId_ValidSupervisorName" time="9.408" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_019_validateSearch_InvalidEmpName_ValidEmpId_InvalidSupervisorName" time="9.503" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_008_validateSearch_ValidEmpName_ValidEmpId" time="10.702" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_024_ValidateAddEmployee_WithInput" time="10.489" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_001_validateSearch_ValidEmpName" time="10.427" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_026_ValidateAddEmployee_WithCreateLoginCredentails" time="9.350" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_003_validateSearch_ValidEmpId" time="10.362" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_002_validateSearch_InvalidEmpName" time="9.998" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_018_validateSearch_ValidEmpName_InvalidEmpId_InvalidSupervisorName" time="9.533" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_020_validateSearch_InvalidEmpName_InvalidEmpId_InvalidSupervisorName" time="9.319" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_004_validateSearch_InvalidEmpId" time="9.153" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_016_validateSearch_InvalidEmpName_ValidEmpId_ValidSupervisorName" time="9.342" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_006_validateSearch_EmpJobTitle" time="10.683" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_011_validateSearch_InvalidEmpName_InValidEmpId" time="9.374" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_025_ValidateAddEmployee_WithoutInput" time="8.774" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_005_validateSearch_EmpStatus" time="10.362" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_014_validateSearch_ValidEmpName_ValidEmpId_InvalidSupervisorName" time="9.590" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_023_ValidateAddEmployee_Page" time="9.494" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_028_ValidateAddEmployee_WithInvalidCreateLoginCredentails" time="9.492" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_010_validateSearch_InvalidEmpName_ValidEmpId" time="9.305" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_012_validateSearch_ValidSupervisorName" time="10.617" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_022_validateSearch_NoInput" time="9.356" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_030_ValidateAddEmployee_With_RepeatedUsernameInCreateLoginCredentails" time="19.045" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_029_ValidateAddEmployee_Without_usernameInCreateLoginCredentails" time="9.829" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_027_ValidateAddEmployee_WithoutCreateLoginCredentails" time="8.981" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_017_ValidateSearch_InvalidEmpName_InvalidEmpId_ValidSupervisorName" time="9.715" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_015_validateSearch_ValidEmpName_ValidEmpId_ValidSupervisorName" time="10.910" classname="testSuite.TC_OrangeHRM" />
+                <testcase name="tc_009_validateSearch_ValidEmpName_InvalidEmpId" time="9.502" classname="testSuite.TC_OrangeHRM" />
+      
+</testsuite>

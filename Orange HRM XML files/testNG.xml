@@ -17,7 +17,7 @@
         <classes>
 
             <class name="testSuite.TC_Admin_Organization" />
-<!--            <class name="testSuite.TC_OrangeHRM" />-->
+            <class name="testSuite.TC_OrangeHRM" />
 <!--        <class name="testSuite.TC_PIM_Config" />-->
         </classes>
     </test>

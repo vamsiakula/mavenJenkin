@@ -37,7 +37,7 @@ public class CommonPage extends SafeActions {
         WebElement select_sub_module = driver.findElement(By.xpath("//a[text()='" + SubModule + "']"));
         Log.info("The sub-module "+SubModule+" is clicked");
         action.moveToElement(select_sub_module).click().build().perform();
-
+        Log.info(SubModule+" "+"Module is opened");
     }
 
 
