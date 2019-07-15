@@ -122,7 +122,7 @@ public class TC_OrangeHRM extends CommonActions {
         pim_employeeListPage.resultsfound(empId);
         Log.info("Test case:"+" "+method.getName()+"is completed");
     }
-/*
+
     @Test
     public void tc_002_validateSearch_InvalidEmpName(Method method) throws IOException, InterruptedException {
         Log.info("Test case:"+method.getName()+"is started");CommonPage commonPage = new CommonPage(driver);
@@ -132,7 +132,7 @@ public class TC_OrangeHRM extends CommonActions {
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.searchEmployee(empName1, "None", "None",input_name,input_id,input_supervisor);
         clickButton(search);
-        pim_employeeListPage.validate();
+        pim_employeeListPage.validate();Log.info("Test case:"+" "+method.getName()+"is completed");
     }
 
     @Test
@@ -144,7 +144,7 @@ public class TC_OrangeHRM extends CommonActions {
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.searchEmployee("None", empId, "None",input_name,input_id,input_supervisor);
         clickButton(search);
-        pim_employeeListPage.resultsfound(empId);
+        pim_employeeListPage.resultsfound(empId);Log.info("Test case:"+" "+method.getName()+"is completed");
 
     }
 
@@ -157,7 +157,7 @@ public class TC_OrangeHRM extends CommonActions {
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.searchEmployee("None", empId2, "None",input_name,input_id,input_supervisor);
         clickButton(search);
-        pim_employeeListPage.validate();
+        pim_employeeListPage.validate();Log.info("Test case:"+" "+method.getName()+"is completed");
 
     }
 
@@ -170,7 +170,7 @@ public class TC_OrangeHRM extends CommonActions {
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.dropDown_Search(input_status,input_jobtitle,input_subunit,status,"None","None");
         clickButton(search);
-        pim_employeeListPage.resultsfound(empId);
+        pim_employeeListPage.resultsfound(empId);Log.info("Test case:"+" "+method.getName()+"is completed");
 
     }
 
@@ -183,7 +183,7 @@ public class TC_OrangeHRM extends CommonActions {
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.dropDown_Search(input_name,input_jobtitle,input_subunit,"None",jobTitle,"None");
         clickButton(search);
-        pim_employeeListPage.resultsfound(empId);
+        pim_employeeListPage.resultsfound(empId);Log.info("Test case:"+" "+method.getName()+"is completed");
 
     }
 
@@ -196,7 +196,7 @@ public class TC_OrangeHRM extends CommonActions {
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.dropDown_Search(input_status,input_jobtitle,input_subunit,"None","None",subUnit);
         clickButton(search);
-        pim_employeeListPage.resultsfound(empId);
+        pim_employeeListPage.resultsfound(empId);Log.info("Test case:"+" "+method.getName()+"is completed");
 
     }
 
@@ -209,7 +209,7 @@ public class TC_OrangeHRM extends CommonActions {
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.searchEmployee(empName,empId,"None",input_name,input_id,input_supervisor);
         clickButton(search);
-        pim_employeeListPage.resultsfound(empId);
+        pim_employeeListPage.resultsfound(empId);Log.info("Test case:"+" "+method.getName()+"is completed");
 
     }
 
@@ -222,7 +222,7 @@ public class TC_OrangeHRM extends CommonActions {
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.searchEmployee(empName, empId2, "None",input_name,input_id,input_supervisor);
         clickButton(search);
-        pim_employeeListPage.validate();
+        pim_employeeListPage.validate();Log.info("Test case:"+" "+method.getName()+"is completed");
 
 
     }
@@ -236,7 +236,7 @@ public class TC_OrangeHRM extends CommonActions {
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.searchEmployee(empName1, empId, "None",input_name,input_id,input_supervisor);
         clickButton(search);
-        pim_employeeListPage.validate();
+        pim_employeeListPage.validate();Log.info("Test case:"+" "+method.getName()+"is completed");
 
     }
 
@@ -249,7 +249,7 @@ public class TC_OrangeHRM extends CommonActions {
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.searchEmployee(empName1, empId2, "None",input_name,input_id,input_supervisor);
         clickButton(search);
-        pim_employeeListPage.validate();
+        pim_employeeListPage.validate();Log.info("Test case:"+" "+method.getName()+"is completed");
 
     }
 
@@ -262,7 +262,7 @@ public class TC_OrangeHRM extends CommonActions {
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.searchEmployee("None", "None",empSupervisor,input_name,input_id,input_supervisor);
         clickButton(search);
-        pim_employeeListPage.resultsfound(empId);
+        pim_employeeListPage.resultsfound(empId);Log.info("Test case:"+" "+method.getName()+"is completed");
     }
 
     @Test
@@ -274,7 +274,7 @@ public class TC_OrangeHRM extends CommonActions {
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.searchEmployee("None", "None",empSupervisor2,input_name,input_id,input_supervisor);
         clickButton(search);
-        pim_employeeListPage.validate();
+        pim_employeeListPage.validate();Log.info("Test case:"+" "+method.getName()+"is completed");
 
     }
     @Test
@@ -286,7 +286,7 @@ public class TC_OrangeHRM extends CommonActions {
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.searchEmployee(empName,empId,empSupervisor2,input_name,input_id,input_supervisor);
         clickButton(search);
-        pim_employeeListPage.validate();
+        pim_employeeListPage.validate();Log.info("Test case:"+" "+method.getName()+"is completed");
     }
     @Test
     public void tc_015_validateSearch_ValidEmpName_ValidEmpId_ValidSupervisorName(Method method) throws IOException, InterruptedException {
@@ -297,7 +297,7 @@ public class TC_OrangeHRM extends CommonActions {
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.searchEmployee(empName,empId,empSupervisor,input_name,input_id,input_supervisor);
         clickButton(search);
-        pim_employeeListPage.resultsfound(empId);
+        pim_employeeListPage.resultsfound(empId);Log.info("Test case:"+" "+method.getName()+"is completed");
 
     }
     @Test
@@ -309,7 +309,7 @@ public class TC_OrangeHRM extends CommonActions {
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.searchEmployee(empName1,empId,empSupervisor,input_name,input_id,input_supervisor);
         clickButton(search);
-        pim_employeeListPage.validate();
+        pim_employeeListPage.validate();Log.info("Test case:"+" "+method.getName()+"is completed");
 
     }
     @Test
@@ -321,7 +321,7 @@ public class TC_OrangeHRM extends CommonActions {
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.searchEmployee(empName1,empId2,empSupervisor,input_name,input_id,input_supervisor);
         clickButton(search);
-        pim_employeeListPage.validate();
+        pim_employeeListPage.validate();Log.info("Test case:"+" "+method.getName()+"is completed");
 
     }
     @Test
@@ -333,7 +333,7 @@ public class TC_OrangeHRM extends CommonActions {
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.searchEmployee(empName,empId2,empSupervisor2,input_name,input_id,input_supervisor);
         clickButton(search);
-        pim_employeeListPage.validate();
+        pim_employeeListPage.validate();Log.info("Test case:"+" "+method.getName()+"is completed");
 
     }
     @Test
@@ -345,7 +345,7 @@ public class TC_OrangeHRM extends CommonActions {
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.searchEmployee(empName1,empId,empSupervisor2,input_name,input_id,input_supervisor);
         clickButton(search);
-        pim_employeeListPage.validate();
+        pim_employeeListPage.validate();Log.info("Test case:"+" "+method.getName()+"is completed");
 
     }
     @Test
@@ -357,7 +357,7 @@ public class TC_OrangeHRM extends CommonActions {
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.searchEmployee(empName1,empId2,empSupervisor2,input_name,input_id,input_supervisor);
         clickButton(search);
-        pim_employeeListPage.validate();
+        pim_employeeListPage.validate();Log.info("Test case:"+" "+method.getName()+"is completed");
 
     }
     @Test
@@ -369,7 +369,7 @@ public class TC_OrangeHRM extends CommonActions {
         verifySectionPage("Employee List", "PIM");
         pim_employeeListPage.searchEmployee(empName,empId2,empSupervisor,input_name,input_id,input_supervisor);
         clickButton(search);
-        pim_employeeListPage.validate();
+        pim_employeeListPage.validate();Log.info("Test case:"+" "+method.getName()+"is completed");
 
     }
     @Test
@@ -380,7 +380,7 @@ public class TC_OrangeHRM extends CommonActions {
         commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
         clickButton(search);
-        pim_employeeListPage.noInput();
+        pim_employeeListPage.noInput();Log.info("Test case:"+" "+method.getName()+"is completed");
     }
     @Test
     public void tc_023_ValidateAddEmployee_Page(Method method) throws IOException, InterruptedException {
@@ -390,7 +390,7 @@ public class TC_OrangeHRM extends CommonActions {
         commonPage.selectSectionOfPIM(module_pim,module_employeeList);
         verifySectionPage("Employee List", "PIM");
         clickButton(add);
-        addEmployee_page.verify_page(sub_module_2_add,"Add Employee");
+        addEmployee_page.verify_page(sub_module_2_add,"Add Employee");Log.info("Test case:"+" "+method.getName()+"is completed");
     }
     @Test
     public void tc_024_ValidateAddEmployee_WithInput(Method method) throws IOException, InterruptedException {
@@ -400,7 +400,7 @@ public class TC_OrangeHRM extends CommonActions {
         commonPage.selectSectionOfPIM(module_pim,sub_module_2_add);
         addEmployee_page.addingNewEmployee(FirstName,LastName,Id);
         clickButton(save);
-        addEmployee_page.verify_page(personal_detail_module,"Personal Details");
+        addEmployee_page.verify_page(personal_detail_module,"Personal Details");Log.info("Test case:"+" "+method.getName()+"is completed");
 
     }
     @Test
@@ -411,7 +411,7 @@ public class TC_OrangeHRM extends CommonActions {
         clickButton(save);
         AddEmployee_page addEmployee_page =new AddEmployee_page(driver);
         String message=addEmployee_page.requiredMessage(message1);
-        System.out.println(message);
+        System.out.println(message);Log.info("Test case:"+" "+method.getName()+"is completed");
     }
     @Test
     public void tc_026_ValidateAddEmployee_WithCreateLoginCredentails(Method method) throws IOException, InterruptedException {
@@ -424,7 +424,7 @@ public class TC_OrangeHRM extends CommonActions {
         addEmployee_page.loginCredentials(login_username, "navyasritangudu7");
         addEmployee_page.loginCredentials(login_user_password, "Navyasri@711");
         addEmployee_page.loginCredentials(login_re_password, "Navyasri@711");
-        clickButton(save);
+        clickButton(save);Log.info("Test case:"+" "+method.getName()+"is completed");
     }
     @Test
     public void tc_027_ValidateAddEmployee_WithoutCreateLoginCredentails(Method method) throws IOException, InterruptedException {
@@ -436,7 +436,7 @@ public class TC_OrangeHRM extends CommonActions {
         addEmployee_page.loginButton();
         clickButton(save);
         String message=addEmployee_page.requiredMessage(message2);
-        System.out.println(message);
+        System.out.println(message);Log.info("Test case:"+" "+method.getName()+"is completed");
    }
 @Test
         public void tc_028_ValidateAddEmployee_WithInvalidCreateLoginCredentails(Method method) throws IOException, InterruptedException {
@@ -451,7 +451,7 @@ public class TC_OrangeHRM extends CommonActions {
         addEmployee_page.loginCredentials(login_re_password, "Navyasri@712");
         clickButton(save);
         String message= addEmployee_page.requiredMessage(message3);
-        System.out.println(message);
+        System.out.println(message);Log.info("Test case:"+" "+method.getName()+"is completed");
     }
     @Test
     public void tc_029_ValidateAddEmployee_Without_usernameInCreateLoginCredentails(Method method) throws IOException, InterruptedException {
@@ -465,7 +465,7 @@ public class TC_OrangeHRM extends CommonActions {
         addEmployee_page.loginCredentials(login_re_password, "Navyasri@712");
         clickButton(save);
         String message=addEmployee_page.requiredMessage(message2);
-        System.out.println(message);
+        System.out.println(message);Log.info("Test case:"+" "+method.getName()+"is completed");
     }
     @Test
     public void tc_030_ValidateAddEmployee_With_RepeatedUsernameInCreateLoginCredentails(Method method) throws IOException, InterruptedException {
@@ -479,6 +479,6 @@ public class TC_OrangeHRM extends CommonActions {
         addEmployee_page.loginCredentials(login_user_password,"Navyasri@711");
         addEmployee_page.loginCredentials(login_re_password,"Navyasri@711");
         clickButton(save);
-        addEmployee_page.verify_page(sub_module_2_add,"Add Employee");
-    }*/
+        addEmployee_page.verify_page(sub_module_2_add,"Add Employee");Log.info("Test case:"+" "+method.getName()+"is completed");
+    }
 }

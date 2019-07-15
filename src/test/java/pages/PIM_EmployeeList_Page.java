@@ -46,26 +46,31 @@ public class PIM_EmployeeList_Page extends SafeActions {
             WebElement employeeStatus = driver.findElement(By.id(status_string));
             Select dropdown = new Select(employeeStatus);
             dropdown.selectByVisibleText(status);
+            Log.info("emp status is selected");
         } else if (jobtitle != "None") {
             WebElement employeeJobTitle = driver.findElement(By.id(jobtitle_string));
             Select dropdown = new Select(employeeJobTitle);
             dropdown.selectByVisibleText(jobtitle);
+            Log.info("jobtitile is selected");
         } else {
             WebElement employeeSubUnit = driver.findElement(By.id(subunit_string));
             Select dropdown = new Select(employeeSubUnit);
             dropdown.selectByVisibleText(subUnit);
+            Log.info("subunit is selected");
         }
     }
 
     public void reset() throws InterruptedException {
         WebElement resetButton = driver.findElement(By.id("resetBtn"));
         safeClick(resetButton, 10);
+        Log.info("reser button is clicked");
     }
 
     public void validate() {
         WebElement validation = driver.findElement(By.xpath("//td[text()=\"No Records Found\"]"));
         Assert.assertTrue(validation.getText().equals("No Records Found"));
         System.out.println("No Records Found");
+        Log.info("validation is done");
     }
 
     public void resultsfound(String empId) throws InterruptedException {
@@ -74,6 +79,7 @@ public class PIM_EmployeeList_Page extends SafeActions {
         WebElement validateElement2 = driver.findElement(By.cssSelector("input[id='personal_txtEmployeeId']"));
         Assert.assertTrue(validateElement2.getAttribute("value").equals(empId));
         System.out.println("search results found");
+        Log.info("validation is done");
 
 
     }

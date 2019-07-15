@@ -53,7 +53,7 @@ public class BrowserSetUp  {
 
     @AfterMethod
     public void closeBrowser(){
-
+        Log.info("browser is closed");
         Log.info("test case ended");driver.close();
     }
     public void takeScreenShot(String screenshot) throws IOException {
